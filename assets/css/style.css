@@ -1170,3 +1170,6 @@ img {
   .community-hero .hero-actions .button { width: 100%; }
   .community-hero-note { margin-top: -30px; }
 }
+
+/* Keep the coded personal sigil hidden, including where brand styles set display. */
+.brand-symbol[hidden] { display: none !important; }
