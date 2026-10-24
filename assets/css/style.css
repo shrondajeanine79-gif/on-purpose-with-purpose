@@ -1055,3 +1055,47 @@ img {
 .skip-link:focus {
   top: 16px;
 }
+/* Audit improvements: hero image layout and visible keyboard focus */
+.hero-visual {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 35%;
+  min-width: 0;
+  max-width: 420px;
+  margin-left: 30px;
+}
+.hero .hero-photo {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+.hero-moon {
+  position: absolute;
+  top: -26px;
+  right: -12px;
+  color: var(--gold);
+  font-size: 55px;
+  line-height: 1;
+  pointer-events: none;
+}
+.hero-photo-accent {
+  position: absolute;
+  z-index: -1;
+  inset: 20px -14px -14px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 22px;
+  pointer-events: none;
+}
+:where(a, button):focus-visible {
+  outline: 3px solid var(--purple-deep);
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .hero-visual {
+    display: none;
+  }
+}
