@@ -1237,8 +1237,8 @@ body { background: #f7f4eb; }
    Alex Brush: expressive signature; Parisienne: softer reflective accent;
    Allura: available for future campaign materials. */
 :root {
-  --font-signature: "Alex Brush", cursive;
-  --font-reflection: "Parisienne", cursive;
+  --font-signature: "Allura", cursive;
+  --font-reflection: "Allura", cursive;
   --font-soft-script: "Allura", cursive;
 }
 .community-hero .hero-caption {
@@ -1290,3 +1290,6 @@ body { background: #f7f4eb; }
   .navigation a { font-size: clamp(11px,.9vw,13px); white-space: nowrap; }
   .site-header { padding-left: max(3%,calc((100% - 1280px)/2)); padding-right:max(3%,calc((100% - 1280px)/2)); }
 }
+
+/* Approved typography: Allura is the only decorative script. */
+:root { --font-signature:"Allura",cursive; --font-reflection:"Allura",cursive; --font-soft-script:"Allura",cursive; }
