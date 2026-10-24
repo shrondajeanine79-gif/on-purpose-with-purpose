@@ -1,4 +1,3 @@
-
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,39 +5,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const navigation = document.getElementById("navigation");
   const year = document.getElementById("year");
 
-  // Display the current year in the footer.
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
+  if (year) year.textContent = new Date().getFullYear();
 
-  // Open and close the mobile navigation.
-  if (menuToggle && navigation) {
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navigation.classList.toggle("is-open");
+  if (!menuToggle || !navigation) return;
 
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation" : "Open navigation"
-      );
-    });
+  const closeMenu = (restoreFocus = false) => {
+    const wasOpen = navigation.classList.contains("is-open");
+    navigation.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation");
+    if (restoreFocus && wasOpen) menuToggle.focus();
+  };
 
-    // Close the menu after selecting a navigation link.
-    navigation.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navigation.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Open navigation");
-      });
-    });
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
 
-    // Close the menu when returning to a desktop-width layout.
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 760) {
-        navigation.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Open navigation");
-      }
-    });
-  }
+  navigation.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => closeMenu());
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeMenu(true);
+  });
+
+  document.addEventListener("pointerdown", event => {
+    if (!navigation.contains(event.target) && !menuToggle.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) closeMenu();
+  });
 });
