@@ -1173,3 +1173,62 @@ img {
 
 /* Keep the coded personal sigil hidden, including where brand styles set display. */
 .brand-symbol[hidden] { display: none !important; }
+
+/* BRAND SYSTEM — Community • Restoration • Advocacy • Growth
+   Botanical calm and golden-hour warmth throughout the experience. */
+:root {
+  --forest: #28584b;
+  --sage-light: #e8efe5;
+  --sunrise: #f3c7a4;
+  --sunset: #cf987f;
+  --earth: #785b4b;
+  --nature-glow: rgba(243, 199, 164, .28);
+  --radius: 24px;
+  --shadow: 0 16px 45px rgba(40, 88, 75, .10);
+}
+body { background: #f7f4eb; }
+.site-header { background: rgba(250, 248, 241, .94); border-bottom-color: rgba(40, 88, 75, .14); }
+.brand-name { color: var(--forest); }
+.eyebrow { letter-spacing: .13em; }
+.button, .nav-cta { transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.community-hero {
+  background:
+    radial-gradient(ellipse at 86% 12%, rgba(243, 199, 164, .48), transparent 45%),
+    radial-gradient(ellipse at 7% 85%, rgba(168, 178, 161, .33), transparent 48%),
+    linear-gradient(130deg, #fcf8ed 0%, #f2f1e8 54%, #e7eee7 100%);
+}
+.community-photo-frame { border-color: #fdfaf2; box-shadow: 0 24px 65px rgba(40,88,75,.18); }
+.community-hero-note { border-color: rgba(40,88,75,.17); }
+.community-hero-note span { color: var(--earth); }
+.community-hero .hero-caption { color: var(--forest); }
+.section { position: relative; }
+#about {
+  background: linear-gradient(160deg, #f8f6ed 0%, #eaf0e8 100%);
+}
+#explore {
+  background: linear-gradient(160deg, #edf2ea 0%, #f8f3e8 100%);
+}
+#offerings {
+  background: linear-gradient(165deg, #faf7ef 0%, #f0ece2 100%);
+}
+#journal {
+  background:
+    radial-gradient(ellipse at 78% 20%, rgba(243,199,164,.45), transparent 52%),
+    linear-gradient(145deg, #e8ede6, #f8efe3 65%, #eed5c6);
+}
+#connect {
+  background:
+    radial-gradient(ellipse at 90% 5%, rgba(207,152,127,.23), transparent 50%),
+    linear-gradient(145deg, #f7f4eb, #e7eee6);
+}
+#about img, #explore img, #offerings img, #journal img {
+  object-fit: cover;
+  filter: saturate(.86) contrast(.98);
+}
+.glass-panel { border-color: rgba(255,255,255,.72); }
+:where(a,button):focus-visible { outline: 3px solid var(--forest); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .button, .nav-cta { transition: none; }
+  .button:hover { transform: none; }
+}
