@@ -1232,3 +1232,30 @@ body { background: #f7f4eb; }
   .button, .nav-cta { transition: none; }
   .button:hover { transform: none; }
 }
+
+/* Signature typography — free Google Fonts, intentionally used as accents only.
+   Alex Brush: expressive signature; Parisienne: softer reflective accent;
+   Allura: available for future campaign materials. */
+:root {
+  --font-signature: "Alex Brush", cursive;
+  --font-reflection: "Parisienne", cursive;
+  --font-soft-script: "Allura", cursive;
+}
+.community-hero .hero-caption {
+  font-family: var(--font-signature);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+#about .section-heading h2 span,
+#journal h2 span {
+  font-family: var(--font-reflection);
+  font-weight: 400;
+  font-size: 1.18em;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+@media (max-width: 640px) {
+  .community-hero .hero-caption { font-size: 1.7rem; }
+}
