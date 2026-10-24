@@ -1293,3 +1293,7 @@ body { background: #f7f4eb; }
 
 /* Approved typography: Allura is the only decorative script. */
 :root { --font-signature:"Allura",cursive; --font-reflection:"Allura",cursive; --font-soft-script:"Allura",cursive; }
+
+/* Approved brand typography: Playfair Display headings, Allura signature accents. */
+:root { --font-heading: "Playfair Display", Georgia, serif; }
+.hero h1, .section-heading h2, .journal-content h2, .purpose-card h3, .brand-name, .inner-hero h1, .page-section h2, .brand-tile h2, .brand-tile h3, .offering-copy h3, .explore-card h3 { font-family: var(--font-heading); }
