@@ -1297,3 +1297,11 @@ body { background: #f7f4eb; }
 /* Approved brand typography: Playfair Display headings, Allura signature accents. */
 :root { --font-heading: "Playfair Display", Georgia, serif; }
 .hero h1, .section-heading h2, .journal-content h2, .purpose-card h3, .brand-name, .inner-hero h1, .page-section h2, .brand-tile h2, .brand-tile h3, .offering-copy h3, .explore-card h3 { font-family: var(--font-heading); }
+
+/* Restorative garden visual on Community page */
+.community-garden-visual { position:relative; max-width:1180px; margin:clamp(28px,5vw,60px) auto 0; overflow:hidden; border-radius:24px; min-height:300px; background:#b5c9ae; box-shadow:0 18px 48px rgba(40,88,75,.13); }
+.community-garden-visual img { width:100%; height:clamp(320px,42vw,540px); object-fit:cover; display:block; border-radius:0; }
+.community-garden-overlay { position:absolute; inset:auto 0 0; padding:clamp(25px,4vw,50px); color:#fff; background:linear-gradient(0deg,rgba(19,52,39,.85),rgba(19,52,39,0)); }
+.community-garden-overlay .eyebrow { color:#e8f0d8; }
+.community-garden-overlay p:last-child { max-width:650px; margin:0; font-family:var(--font-heading); font-size:clamp(1.5rem,3vw,2.5rem); line-height:1.25; }
+@media(max-width:1250px) { .community-garden-visual {margin-left:5%;margin-right:5%;} }
