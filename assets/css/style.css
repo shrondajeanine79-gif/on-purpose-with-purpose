@@ -1283,3 +1283,10 @@ body { background: #f7f4eb; }
 .page-note { font-size:.9rem; color:var(--muted); }
 @media(max-width:850px) { .founder-layout {grid-template-columns:1fr;} .portrait-frame {max-width:480px;} .values-grid {grid-template-columns:1fr 1fr;} }
 @media(max-width:600px) { .values-grid {grid-template-columns:1fr;} .inner-hero {padding-top:70px;} }
+
+/* Keep the expanded seven-link navigation usable on laptops. */
+@media(min-width: 1001px) {
+  .navigation { gap: clamp(8px,1.3vw,20px); }
+  .navigation a { font-size: clamp(11px,.9vw,13px); white-space: nowrap; }
+  .site-header { padding-left: max(3%,calc((100% - 1280px)/2)); padding-right:max(3%,calc((100% - 1280px)/2)); }
+}
