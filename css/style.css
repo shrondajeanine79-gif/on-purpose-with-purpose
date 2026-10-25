@@ -207,18 +207,10 @@ footer .legal{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255
 .slip-card .tag{font-family:'Allura','Playfair Display',cursive;font-style:normal;font-weight:400;font-size:42px;line-height:1.1;color:var(--purple)}
 .philosophy h2 span{font-family:'Allura','Playfair Display',cursive;font-weight:400;color:var(--gold-l);font-size:1.3em;letter-spacing:0}
 .eyebrow,.need,.sig,.brand,.pull cite{font-family:'Playfair Display',Georgia,serif}
+.social-icons{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.social-icons a{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border:1.5px solid rgba(153,246,228,.55);color:var(--teal-pale);font-size:18px;text-decoration:none;transition:transform .15s,background .15s,color .15s}
+.social-icons a:hover,.social-icons a:focus-visible{background:var(--teal-grad);color:#fff;border-color:transparent;transform:translateY(-3px)}
+.social-icons.on-light a{background:var(--cream);border-color:var(--teal-d);color:var(--teal-d)}
+.social-icons.on-light a:hover{color:#fff}
 .skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--purple);padding:10px 16px;border-radius:8px;z-index:100;font-weight:600}
 .skip:focus{left:8px}
-
-/* Requested glassmorphism; original content, palette, and layout retained. */
-body{background:radial-gradient(ellipse at 5% 15%,rgba(45,212,191,.12),transparent 42%),radial-gradient(ellipse at 95% 65%,rgba(91,74,106,.12),transparent 42%),var(--cream)}
-.site-header{background:rgba(245,240,225,.82);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 6px 24px rgba(30,27,75,.06)}
-.guide-card,.path,.cardx,.value,.slip-card{background:rgba(255,253,247,.86);border:1px solid rgba(255,255,255,.8);box-shadow:0 12px 38px rgba(49,16,66,.10),inset 0 1px 0 rgba(255,255,255,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-.slip-card{border:2px dashed rgba(15,118,110,.65)}
-.hero .guide-card{background:rgba(255,253,247,.92);box-shadow:0 24px 60px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.9)}
-.when,.live-badge{background:rgba(255,253,247,.9);border:1px solid rgba(255,255,255,.75);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
-.signup input{background:rgba(255,255,255,.94);border-color:rgba(255,255,255,.75)}
-.nappy-photo{width:100%;height:260px;object-fit:cover;border-radius:12px;margin-bottom:24px}
-.hero .nappy-photo{height:220px}
-@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.guide-card,.path,.cardx,.value,.slip-card,.when,.live-badge{background:var(--cream-light)}}
-@media(prefers-reduced-transparency:reduce){.site-header,.guide-card,.path,.cardx,.value,.slip-card,.when,.live-badge{background:var(--cream-light);-webkit-backdrop-filter:none;backdrop-filter:none}}
