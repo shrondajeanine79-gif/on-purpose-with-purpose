@@ -15,12 +15,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="css/style.css">
+<style>
+#contact-form{max-width:760px;margin:0 auto;background:#FBF8EF;border:1px solid #E3DCC7;border-radius:24px;padding:32px;box-shadow:0 16px 45px #31104208}
+#contact-form label{display:block;font-weight:600;font-size:14px;margin-bottom:7px}
+#contact-form .field{margin-bottom:20px}
+#contact-form input:not([type=hidden]),#contact-form textarea,#contact-form select{font:inherit;width:100%;background:#FFFDF7;border:1px solid #E3DCC7;border-radius:10px;padding:12px 14px;color:#3B2A4A}
+#contact-form textarea{min-height:140px;resize:vertical}
+#contact-form input:focus,#contact-form textarea:focus,#contact-form select:focus{outline:2px solid #0F766E;outline-offset:2px}
+#contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#contact-form button{background:#0F766E;color:#fff;font:600 16px Inter,Arial,sans-serif;border:0;border-radius:99px;padding:15px 30px;cursor:pointer}
+#contact-form button:hover{background:#115E59}
+#contact-form .note{font-size:12px;color:#5B4A6A;margin:16px 0 0}
+@media(max-width:760px){#contact-form .form-row{grid-template-columns:1fr;gap:0}#contact-form{padding:23px}}
+</style>
 </head>
 <body>
 <a href="#main" class="skip">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">On Purpose With Purpose<small>Healing &bull; Growth &bull; Community</small></a>
+    <a class="brand" href="index.html">On Purpose With Purpose<small>Healing &bull; Inspiration &bull; Growth &bull; Connection</small></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
       <a class="link" href="index.html">Home</a>
@@ -48,13 +61,16 @@
       <div class="cardx"><h3>Follow</h3><div class="social-icons on-light"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi" title="Ko-fi"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a><a href="https://shrondajeanine79-gif.github.io/link-in-bio/" target="_blank" rel="noopener noreferrer" aria-label="Link in Bio" title="Link in Bio"><i class="fa-solid fa-link" aria-hidden="true"></i></a></div></div>
     </div>
     <div class="center-actions" style="margin-top:44px">
-      <a class="btn btn-primary" href="https://tally.so/r/xVVZYE">Send a Message</a>
+      <a class="btn btn-primary" href="#contact-form">Send a Message</a>
       <a class="btn btn-outline" href="https://calendly.com/shrondajeanine79/30min">Book a Free Introductory Consultation</a>
     </div>
     <p style="text-align:center;margin-top:20px">One free 30-minute introductory consultation per person. Any later paid appointments are arranged personally with Shronda.</p>
     <div style="margin-top:32px">
-      <iframe src="https://tally.so/embed/xVVZYE?hideTitle=1&amp;transparentBackground=1" loading="lazy" width="100%" height="850" frameborder="0" title="Contact On Purpose With Purpose" style="border:0"></iframe>
-      <p style="text-align:center">If the form does not load, <a href="https://tally.so/r/xVVZYE">open the contact form</a>.</p>
+<form action="https://formsubmit.co/on-purpose-with-purpose@outlook.com" method="POST" id="contact-form">
+<input type="hidden" name="_subject" value="New website contact — On Purpose With Purpose"><input type="hidden" name="_template" value="table"><input type="hidden" name="_autoresponse" value="Thank you for contacting On Purpose With Purpose. Your message has been received. Shronda will review your message and respond as appropriate. Healing • Inspiration • Growth • Connection"><input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+<div class="form-row"><div class="field"><label for="name">Full name *</label><input id="name" type="text" name="name" autocomplete="name" required></div><div class="field"><label for="email">Email address *</label><input id="email" type="email" name="email" autocomplete="email" required></div></div>
+<div class="field"><label for="reason">Reason for contacting</label><select id="reason" name="reason"><option value="">Choose an option (optional)</option>General Inquiry</option><option>Partnership Opportunity</option><option>Speaking Engagement</option><option>Support Request</option></select></div>
+<div class="field"><label for="subject">Subject</label><input id="subject" type="text" name="subject"></div><div class="field"><label for="message">How can we help you? *</label><textarea id="message" name="message" required></textarea></div><button type="submit">Send Message →</button><p class="note">* Required fields. Please avoid including sensitive personal information.</p><div id="status" role="status" aria-live="polite"></div></form>
     </div>
   </div>
 </section>
