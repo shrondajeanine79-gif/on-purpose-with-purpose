@@ -320,8 +320,15 @@
       "activation": "Owner approval plus Phase 6 gate."
     },
     "bookings": {
-      "status": "NOT CONFIGURED",
-      "activation": "Owner approval plus Phase 6 gate."
+      "status": "CONNECTED ON WEBSITE",
+      "provider": "Calendly",
+      "url": "https://calendly.com/shrondajeanine79/30min",
+      "websiteStatus": "Active free 30-minute introductory consultation; available slots verified.",
+      "purposeAccess": "NOT CONFIGURED — PURPOSE cannot read or change bookings.",
+      "activation": "PURPOSE booking management requires separate owner approval and Phase 6 gate.",
+      "terms": "One free introductory consultation per person; later paid appointments arranged personally with Shronda.",
+      "repeatBookingEnforcement": "NOT VERIFIED",
+      "calendarConflictChecking": "NOT VERIFIED"
     },
     "newsletter": {
       "status": "NOT CONFIGURED",
@@ -338,6 +345,18 @@
     "publicChatbot": {
       "status": "DEFERRED",
       "activation": "Separate explicit owner approval, Phase 7."
+    },
+    "contactForm": {
+      "status": "CONNECTED ON WEBSITE",
+      "provider": "FormSubmit",
+      "url": "https://on-purpose-with-purpose.org/contact.html",
+      "endpoint": "https://formsubmit.co/shrondajeanine@on-purpose-with-purpose.org",
+      "recipient": "shrondajeanine@on-purpose-with-purpose.org",
+      "forwardsTo": "on-purpose-with-purpose@outlook.com",
+      "deliveryStatus": "ACTIVATED — owner confirmed receipt of a submission.",
+      "autoresponseStatus": "CONFIGURED — delivery unresolved; owner reported no confirmation received.",
+      "purposeAccess": "NOT CONFIGURED — PURPOSE cannot read submissions or send email.",
+      "activation": "Website form is already active. Any PURPOSE access or outbound email capability requires separate owner authorization."
     }
   },
   "hive": {
