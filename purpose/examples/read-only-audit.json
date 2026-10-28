@@ -1,0 +1,10 @@
+{
+  "request": "Review the live homepage title, meta description, and Open Graph tags, then report gaps and recommendations. Do not change anything.",
+  "workflow": "brand-audit",
+  "action": "research",
+  "scope": "homepage metadata only",
+  "audience": "owner",
+  "channel": null,
+  "notes": "Read-only. No publishing.",
+  "actor": "owner"
+}

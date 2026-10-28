@@ -1,0 +1,19 @@
+﻿{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "hive/deepseek-ai/deepseek-v4.1-flash-1017",
+  "provider": {
+    "hive": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Hive AI",
+      "options": {
+        "baseURL": "https://api-cdn.thehive.ai/api/v3",
+        "apiKey": "{env:HIVE_API_KEY}"
+      },
+      "models": {
+        "deepseek-ai/deepseek-v4.1-flash-1017": {
+          "name": "DeepSeek V4.1 Flash via Hive"
+        }
+      }
+    }
+  }
+}

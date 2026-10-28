@@ -1,0 +1,20 @@
+{
+  "name": "purpose",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PURPOSE - private, owner-directed AI Brand Guru for On Purpose With Purpose. Local Phase 1 foundation. No deployment.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "purpose": "./bin/purpose.js"
+  },
+  "scripts": {
+    "purpose": "node ./bin/purpose.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

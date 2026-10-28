@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "Observed live assets and revenue surface on 2026-10-26",
+  "note": "No payments, memberships, subscriptions, or customer accounts are active. All revenue entries are planned or inactive. NEEDS OWNER REVIEW.",
+  "assets": [
+    {
+      "id": "shronda-portrait",
+      "path": "images/shronda.jpg",
+      "url": "https://on-purpose-with-purpose.org/images/shronda.jpg",
+      "type": "image",
+      "contentType": "image/jpeg",
+      "usedOn": [
+        "index.html",
+        "about.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Portrait of Shronda, founder. Owner must confirm usage rights and approved crops."
+      ]
+    },
+    {
+      "id": "nappy-field",
+      "path": "images/nappy-field.jpg",
+      "url": "https://on-purpose-with-purpose.org/images/nappy-field.jpg",
+      "type": "image",
+      "contentType": "image/jpeg",
+      "usedOn": [
+        "community.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Owner must confirm licensing and attribution requirements."
+      ]
+    },
+    {
+      "id": "nappy-garden",
+      "path": "images/nappy-garden.jpg",
+      "url": "https://on-purpose-with-purpose.org/images/nappy-garden.jpg",
+      "type": "image",
+      "contentType": "image/jpeg",
+      "usedOn": [
+        "community.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Owner must confirm licensing and attribution requirements."
+      ]
+    },
+    {
+      "id": "stylesheets-current",
+      "path": "css/style.css",
+      "url": "https://on-purpose-with-purpose.org/css/style.css",
+      "type": "stylesheet",
+      "usedOn": [
+        "index.html",
+        "about.html",
+        "live.html",
+        "permission-slips.html",
+        "contact.html",
+        "free-guide.html",
+        "404.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "stylesheets-legacy",
+      "path": "assets/css/style.css",
+      "url": "https://on-purpose-with-purpose.org/assets/css/style.css",
+      "type": "stylesheet",
+      "usedOn": [
+        "community.html",
+        "connect.html",
+        "shop.html",
+        "wellness.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Older styling generation. Owner must decide whether to consolidate."
+      ]
+    },
+    {
+      "id": "script-current",
+      "path": "js/site.js",
+      "url": "https://on-purpose-with-purpose.org/js/site.js",
+      "type": "script",
+      "usedOn": [
+        "index.html",
+        "about.html",
+        "live.html",
+        "permission-slips.html",
+        "contact.html",
+        "free-guide.html",
+        "404.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "script-legacy",
+      "path": "assets/js/main.js",
+      "url": "https://on-purpose-with-purpose.org/assets/js/main.js",
+      "type": "script",
+      "usedOn": [
+        "community.html",
+        "connect.html",
+        "shop.html",
+        "wellness.html"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "profile-pic-link-in-bio",
+      "path": "https://shrondajeanine79-gif.github.io/link-in-bio/profilepic.jpg",
+      "type": "image",
+      "contentType": "image/jpeg",
+      "usedOn": [
+        "link-in-bio"
+      ],
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "logo",
+      "path": null,
+      "type": "logo",
+      "status": "MISSING",
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "logo.png and images/logo.png both return 404. Owner must supply an approved logo asset."
+      ]
+    },
+    {
+      "id": "favicon",
+      "path": null,
+      "type": "favicon",
+      "status": "MISSING",
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "favicon.ico and apple-touch-icon.png both return 404."
+      ]
+    }
+  ],
+  "revenueStreams": [
+    {
+      "id": "digital-products",
+      "status": "NOT ACTIVE",
+      "provider": null,
+      "activationGate": "Owner approval plus Phase 6. No checkout code exists.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "memberships",
+      "status": "NOT ACTIVE",
+      "provider": null,
+      "activationGate": "Owner approval plus Phase 6. Owner must define tiers and benefits.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "subscriptions",
+      "status": "NOT ACTIVE",
+      "provider": null,
+      "activationGate": "Owner approval plus Phase 6. Owner must define cadence and fulfillment.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "services",
+      "status": "NOT ACTIVE",
+      "provider": null,
+      "activationGate": "Owner approval plus Phase 6. Owner must define services and booking rules.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "donations",
+      "status": "LINK ONLY",
+      "provider": "Ko-fi",
+      "providerUrl": "https://ko-fi.com",
+      "activationGate": "Only a bare-domain Ko-fi link exists. Owner must supply the real profile URL.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "revenue-reporting",
+      "status": "NOT CONFIGURED",
+      "provider": null,
+      "activationGate": "Owner approval per provider, read-only. No analytics connection exists.",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "Observed live site on 2026-10-26",
+  "note": "No published long-form articles were found. The homepage Journal section is a single reflective prompt, not an article library.",
+  "articles": [],
+  "pages": [
+    {
+      "id": "home",
+      "path": "/index.html",
+      "title": "On Purpose With Purpose | Live with intention. Grow with purpose.",
+      "kind": "home",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "about",
+      "path": "/about.html",
+      "title": "About Shronda | On Purpose With Purpose",
+      "kind": "about",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "live",
+      "path": "/live.html",
+      "title": "Mid Week Check-In | On Purpose With Purpose",
+      "kind": "program",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Day and time are placeholders on the homepage."
+      ]
+    },
+    {
+      "id": "permission-slips",
+      "path": "/permission-slips.html",
+      "title": "Permission Slips | On Purpose With Purpose",
+      "kind": "community-program",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "contact",
+      "path": "/contact.html",
+      "title": "Contact | On Purpose With Purpose",
+      "kind": "contact",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Uses on-purpose-with-purpose@outlook.com and a phone number.",
+        "Another page uses shrondajeanine@shrondajeanineco.com."
+      ]
+    },
+    {
+      "id": "free-guide",
+      "path": "/free-guide.html",
+      "title": "Free Guide: 8 Ways to Be Good to Yourself | On Purpose With Purpose",
+      "kind": "lead-magnet",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Form action is an unfilled placeholder."
+      ]
+    },
+    {
+      "id": "community",
+      "path": "/community.html",
+      "title": "Community & Advocacy | On Purpose With Purpose",
+      "kind": "community",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Uses the older assets/css/style.css and assets/js/main.js styling generation."
+      ]
+    },
+    {
+      "id": "connect",
+      "path": "/connect.html",
+      "title": "Connect | On Purpose With Purpose",
+      "kind": "contact",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Uses the older assets/css/style.css and assets/js/main.js styling generation."
+      ]
+    },
+    {
+      "id": "shop",
+      "path": "/shop.html",
+      "title": "Shop & Learn | On Purpose With Purpose",
+      "kind": "shop",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "States that no payments are collected.",
+        "Uses the older assets/css/style.css and assets/js/main.js styling generation."
+      ]
+    },
+    {
+      "id": "wellness",
+      "path": "/wellness.html",
+      "title": "Wellness & Inner Work | On Purpose With Purpose",
+      "kind": "content-hub",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "notes": [
+        "Uses the older assets/css/style.css and assets/js/main.js styling generation."
+      ]
+    },
+    {
+      "id": "404",
+      "path": "/404.html",
+      "title": "Page not found | On Purpose With Purpose",
+      "kind": "error",
+      "canonical": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    }
+  ],
+  "seoFindings": [
+    "No canonical tags on any page.",
+    "No og:url or Twitter card metadata.",
+    "og:image uses a relative path that social scrapers cannot resolve.",
+    "No sitemap.xml and no robots.txt on the live site.",
+    "No structured data.",
+    "WEBSITE_AUDIT.md is publicly served."
+  ]
+}

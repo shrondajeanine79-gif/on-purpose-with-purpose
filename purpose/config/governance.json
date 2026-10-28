@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "project": "PURPOSE",
+  "phase": 1,
+  "mode": "LOCAL DEVELOPMENT",
+  "deployed": false,
+  "owner": {
+    "id": "owner",
+    "displayName": "Shronda",
+    "auth": "local-only until Phase 2"
+  },
+  "rules": [
+    {
+      "id": 1,
+      "text": "PURPOSE must never independently decide to create brand content. All content creation must be initiated by an explicit owner directive or a previously authorized workflow."
+    },
+    {
+      "id": 2,
+      "text": "Every task must follow owner-supplied standards, guidelines, guardrails, brand voice, scope, audience, and instructions. Missing policy must never be invented."
+    },
+    {
+      "id": 3,
+      "text": "When requirements are missing, ambiguous, or conflicting, PURPOSE must ask for clarification instead of assuming."
+    },
+    {
+      "id": 4,
+      "text": "Capabilities are separate: research, recommend, draft, edit, schedule, send, publish, booking change, charge, configuration edit, analytics view, audit view. Approval for one does not authorize another."
+    },
+    {
+      "id": 5,
+      "text": "Analysis may run only inside authorized workflows and must never trigger content generation, sending, or publication."
+    },
+    {
+      "id": 6,
+      "text": "PURPOSE must not independently create newsletters, blogs, social posts, campaigns, product descriptions, promotions, or brand messaging."
+    },
+    {
+      "id": 7,
+      "text": "PURPOSE must not change the live website, send outbound communications, change bookings, charge money, or publish without explicit owner approval."
+    },
+    {
+      "id": 8,
+      "text": "PURPOSE must keep an auditable log of instructions, drafts, proposed actions, approvals, and executed actions."
+    },
+    {
+      "id": 9,
+      "text": "Access is owner-only. A public visitor chatbot is a separate, separately approved feature with its own knowledge and response guardrails."
+    },
+    {
+      "id": 10,
+      "text": "Brand standards and governance live in an owner-editable configuration and are enforced in application logic, not only in a model prompt."
+    },
+    {
+      "id": 11,
+      "text": "The existing website, domain, CNAME, GitHub Pages deployment, and develop-ai-studio branch are preserved. Hive AI keys stay server-side. Nothing is published or deployed without authorization."
+    }
+  ],
+  "capabilities": {
+    "research": {
+      "description": "Collect and summarize information within an authorized workflow.",
+      "requiresApproval": false,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false
+    },
+    "recommend": {
+      "description": "Produce recommendations for owner review. No content is published.",
+      "requiresApproval": false,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false
+    },
+    "analytics_view": {
+      "description": "Read-only analysis of approved analytics and revenue sources.",
+      "requiresApproval": false,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false
+    },
+    "inventory_view": {
+      "description": "Read-only view of the brand and product inventory.",
+      "requiresApproval": false,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false
+    },
+    "audit_view": {
+      "description": "Read-only view of the append-only audit log and its verification status.",
+      "requiresApproval": false,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false
+    },
+    "draft": {
+      "description": "Prepare a draft artifact for owner review. Never publishes.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 3,
+      "channelRequired": true
+    },
+    "edit": {
+      "description": "Modify an existing draft.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 4,
+      "channelRequired": true
+    },
+    "schedule": {
+      "description": "Queue content for a later time.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 6,
+      "channelRequired": true
+    },
+    "send": {
+      "description": "Send email or messages.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 6,
+      "channelRequired": true
+    },
+    "publish": {
+      "description": "Publish to the live website or a public channel.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 6,
+      "channelRequired": true
+    },
+    "booking_change": {
+      "description": "Create, move, or cancel bookings.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 6,
+      "channelRequired": false
+    },
+    "charge": {
+      "description": "Charge a customer or activate a paid product.",
+      "requiresApproval": true,
+      "enabled": false,
+      "phase": 6,
+      "channelRequired": false
+    },
+    "config_edit": {
+      "description": "Change brand standards or governance.",
+      "requiresApproval": true,
+      "enabled": true,
+      "phase": 1,
+      "channelRequired": false,
+      "ownerOnly": true
+    }
+  },
+  "workflows": {
+    "brand-audit": {
+      "description": "Read-only review of brand, website, and SEO evidence with recommendations. Never generates content.",
+      "enabled": true,
+      "phase": 1,
+      "allowedActions": [
+        "research",
+        "recommend",
+        "analytics_view"
+      ],
+      "requiresBrandStandard": false
+    },
+    "inventory-review": {
+      "description": "Read-only review of the product, page, link, and asset inventory.",
+      "enabled": true,
+      "phase": 1,
+      "allowedActions": [
+        "research",
+        "recommend",
+        "inventory_view"
+      ],
+      "requiresBrandStandard": false
+    },
+    "revenue-audit": {
+      "description": "Read-only revenue and pricing analysis. No charging, refunds, or pricing changes.",
+      "enabled": false,
+      "phase": 5,
+      "allowedActions": [
+        "analytics_view",
+        "recommend"
+      ],
+      "requiresBrandStandard": false
+    },
+    "content-draft": {
+      "description": "Draft content from an owner directive for review only.",
+      "enabled": false,
+      "phase": 3,
+      "allowedActions": [
+        "draft"
+      ],
+      "requiresBrandStandard": true
+    },
+    "newsletter-send": {
+      "description": "Prepare and later send an owner-approved newsletter.",
+      "enabled": false,
+      "phase": 6,
+      "allowedActions": [
+        "draft",
+        "send"
+      ],
+      "requiresBrandStandard": true
+    },
+    "site-update": {
+      "description": "Propose a website change as a draft pull request. Merge and deploy remain owner actions.",
+      "enabled": false,
+      "phase": 6,
+      "allowedActions": [
+        "draft",
+        "publish"
+      ],
+      "requiresBrandStandard": true
+    },
+    "booking-change": {
+      "description": "Read or change bookings.",
+      "enabled": false,
+      "phase": 6,
+      "allowedActions": [
+        "booking_change"
+      ],
+      "requiresBrandStandard": false
+    },
+    "product-sales": {
+      "description": "Create products, prices, or charges.",
+      "enabled": false,
+      "phase": 6,
+      "allowedActions": [
+        "charge"
+      ],
+      "requiresBrandStandard": true
+    },
+    "public-chatbot": {
+      "description": "Public visitor chatbot with approved knowledge only.",
+      "enabled": false,
+      "phase": 7,
+      "allowedActions": [],
+      "requiresBrandStandard": true
+    }
+  },
+  "approvalMatrix": [
+    {
+      "action": "research",
+      "requiresApproval": false,
+      "requiresReauth": false,
+      "enabled": true
+    },
+    {
+      "action": "recommend",
+      "requiresApproval": false,
+      "requiresReauth": false,
+      "enabled": true
+    },
+    {
+      "action": "analytics_view",
+      "requiresApproval": false,
+      "requiresReauth": false,
+      "enabled": true
+    },
+    {
+      "action": "draft",
+      "requiresApproval": true,
+      "requiresReauth": false,
+      "enabled": false
+    },
+    {
+      "action": "edit",
+      "requiresApproval": true,
+      "requiresReauth": false,
+      "enabled": false
+    },
+    {
+      "action": "schedule",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": false
+    },
+    {
+      "action": "send",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": false
+    },
+    {
+      "action": "publish",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": false
+    },
+    {
+      "action": "booking_change",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": false
+    },
+    {
+      "action": "charge",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": false
+    },
+    {
+      "action": "config_edit",
+      "requiresApproval": true,
+      "requiresReauth": true,
+      "enabled": true,
+      "ownerOnly": true
+    }
+  ],
+  "integrations": {
+    "payments": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval plus Phase 6 gate. No payment code exists."
+    },
+    "memberships": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval plus Phase 6 gate."
+    },
+    "subscriptions": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval plus Phase 6 gate."
+    },
+    "bookings": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval plus Phase 6 gate."
+    },
+    "newsletter": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval plus consent review. Existing forms are unconfigured."
+    },
+    "analytics": {
+      "status": "NOT CONFIGURED",
+      "activation": "Owner approval per data source, read-only."
+    },
+    "github": {
+      "status": "READ ONLY",
+      "activation": "Draft pull requests only, Phase 4 or later. Merge and deploy remain owner actions."
+    },
+    "publicChatbot": {
+      "status": "DEFERRED",
+      "activation": "Separate explicit owner approval, Phase 7."
+    }
+  },
+  "hive": {
+    "provider": "Hive AI",
+    "baseUrl": "https://api-cdn.thehive.ai/api/v3",
+    "model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "enabledByDefault": false,
+    "env": {
+      "apiKey": "HIVE_API_KEY",
+      "enableFlag": "PURPOSE_ENABLE_HIVE",
+      "baseUrlOverride": "HIVE_BASE_URL"
+    },
+    "maxOutputTokens": 1200,
+    "note": "Disabled by default. Requires an owner-approved request, HIVE_API_KEY in the server environment, and PURPOSE_ENABLE_HIVE=1. Never expose the key to the browser or logs."
+  },
+  "audit": {
+    "chain": "sha256",
+    "appendOnly": true,
+    "eventTypes": [
+      "cli.run",
+      "directive.created",
+      "directive.clarification",
+      "directive.denied",
+      "approval.granted",
+      "approval.rejected",
+      "approval.consumed",
+      "hive.blocked",
+      "hive.requested",
+      "artifact.created"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "Observed social icons on the live site and the Link in Bio site on 2026-10-26",
+  "policy": "URLs are recorded exactly as published. PURPOSE must never substitute a guessed profile URL. Any entry with a bare domain or malformed URL is a production defect for owner review.",
+  "linksInBio": {
+    "url": "https://shrondajeanine79-gif.github.io/link-in-bio/",
+    "profileImage": "profilepic.jpg",
+    "tagline": "Living Intentionally, Creating Daily, Leading with Heart.",
+    "entries": [
+      {
+        "label": "YouTube Channel",
+        "url": "https://youtube.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "Facebook Connection",
+        "url": "https://facebook.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "Instagram Feed",
+        "url": "https://instagram.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "TikTok Videos",
+        "url": "https://tiktok.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "LinkedIn Profile",
+        "url": "https://linkedin.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "Support Me on Facebook",
+        "url": "https://facebook.comsubscribe/",
+        "status": "MALFORMED",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "Support Me on Ko-fi",
+        "url": "https://ko-fi.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "Contact Me Directly",
+        "url": "mailto:shronda779@gmail.com",
+        "status": "THIRD DISTINCT EMAIL",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      },
+      {
+        "label": "GitHub Code Archive",
+        "url": "https://github.com",
+        "status": "BARE DOMAIN",
+        "reviewStatus": "NEEDS OWNER REVIEW"
+      }
+    ]
+  },
+  "siteSocialIcons": [
+    {
+      "platform": "Facebook",
+      "url": "https://facebook.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://youtube.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "TikTok",
+      "url": "https://tiktok.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "Ko-fi",
+      "url": "https://ko-fi.com",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "platform": "Link in Bio",
+      "url": "https://shrondajeanine79-gif.github.io/link-in-bio/",
+      "source": "live footer social icons",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    }
+  ],
+  "contactEmails": [
+    {
+      "email": "shrondajeanine@shrondajeanineco.com",
+      "source": "connect.html",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "email": "on-purpose-with-purpose@outlook.com",
+      "source": "contact.html",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "email": "shronda779@gmail.com",
+      "source": "Link in Bio",
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    }
+  ],
+  "otherLinks": [
+    {
+      "label": "Link in Bio",
+      "url": "https://shrondajeanine79-gif.github.io/link-in-bio/",
+      "source": "homepage navigation and footer"
+    }
+  ],
+  "telephone": {
+    "value": "+14804423683",
+    "source": "contact.html",
+    "reviewStatus": "NEEDS OWNER REVIEW"
+  }
+}
