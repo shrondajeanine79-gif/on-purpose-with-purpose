@@ -114,14 +114,16 @@
       "reviewStatus": "NEEDS OWNER REVIEW"
     },
     {
-      "email": "on-purpose-with-purpose@outlook.com",
-      "source": "contact.html",
-      "reviewStatus": "NEEDS OWNER REVIEW"
-    },
-    {
       "email": "shronda779@gmail.com",
       "source": "Link in Bio",
       "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "email": "shrondajeanine@on-purpose-with-purpose.org",
+      "source": "contact.html and FormSubmit recipient; owner confirmed 2026-10-28",
+      "canonical": true,
+      "forwardsTo": "on-purpose-with-purpose@outlook.com",
+      "reviewStatus": "OWNER CONFIRMED"
     }
   ],
   "otherLinks": [
@@ -129,6 +131,22 @@
       "label": "Link in Bio",
       "url": "https://shrondajeanine79-gif.github.io/link-in-bio/",
       "source": "homepage navigation and footer"
+    },
+    {
+      "label": "Free Introductory Consultation",
+      "url": "https://calendly.com/shrondajeanine79/30min",
+      "source": "contact.html",
+      "provider": "Calendly",
+      "status": "CONNECTED ON WEBSITE"
+    },
+    {
+      "label": "Contact form",
+      "url": "https://on-purpose-with-purpose.org/contact.html",
+      "endpoint": "https://formsubmit.co/shrondajeanine@on-purpose-with-purpose.org",
+      "source": "contact.html",
+      "provider": "FormSubmit",
+      "status": "CONNECTED ON WEBSITE",
+      "autoresponseStatus": "CONFIGURED — delivery unresolved; owner reported no confirmation received."
     }
   ],
   "telephone": {
