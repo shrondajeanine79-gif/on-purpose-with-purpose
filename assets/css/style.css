@@ -1055,3 +1055,253 @@ img {
 .skip-link:focus {
   top: 16px;
 }
+/* Audit improvements: hero image layout and visible keyboard focus */
+.hero-visual {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 35%;
+  min-width: 0;
+  max-width: 420px;
+  margin-left: 30px;
+}
+.hero .hero-photo {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+.hero-moon {
+  position: absolute;
+  top: -26px;
+  right: -12px;
+  color: var(--gold);
+  font-size: 55px;
+  line-height: 1;
+  pointer-events: none;
+}
+.hero-photo-accent {
+  position: absolute;
+  z-index: -1;
+  inset: 20px -14px -14px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 22px;
+  pointer-events: none;
+}
+:where(a, button):focus-visible {
+  outline: 3px solid var(--purple-deep);
+  outline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .hero-visual {
+    display: none;
+  }
+}
+
+/* Community-first hero redesign */
+.community-hero {
+  min-height: 660px;
+  padding: 84px max(6%, calc((100% - var(--content-width)) / 2));
+  background: radial-gradient(circle at 85% 10%, rgba(185,167,216,.28), transparent 36%),
+              linear-gradient(125deg, #fffcf5 0%, #f5f0e1 64%, #e6f0eb 100%);
+}
+.community-hero::before, .community-hero::after { display: none; }
+.community-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+.community-hero .hero-content { width: 100%; }
+.community-hero h1 { font-size: clamp(43px, 5.1vw, 70px); }
+.community-hero .hero-description { max-width: 580px; line-height: 1.8; }
+.community-hero .hero-visual {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.community-photo-frame {
+  overflow: hidden;
+  border-radius: 46% 46% 26px 26px;
+  border: 7px solid rgba(255,255,255,.8);
+  box-shadow: 0 24px 60px rgba(36,83,85,.17);
+  background: linear-gradient(145deg, var(--teal-soft), var(--lavender));
+}
+.community-hero .hero-photo {
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 4 / 4.6;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+.community-hero-note {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(340px, 95%);
+  margin: -43px auto 0;
+  padding: 16px 20px;
+  color: var(--teal-deep);
+  background: #fffcf5;
+  border: 1px solid rgba(60,110,113,.2);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.community-hero-note span { color: var(--gold); font-size: 28px; }
+.community-hero-note p { margin: 0; font-size: 13px; line-height: 1.55; }
+.community-hero .hero-caption { margin-top: 24px; font-style: italic; color: var(--teal-deep); }
+@media (max-width: 850px) {
+  .community-hero { padding: 65px 6% 85px; }
+  .community-hero-inner { grid-template-columns: 1fr; gap: 42px; }
+  .community-hero .hero-visual { display: block; max-width: 490px; margin: 0 auto; }
+  .community-hero h1 { font-size: clamp(40px, 8vw, 60px); }
+}
+@media (max-width: 480px) {
+  .community-hero { padding: 52px 6% 70px; }
+  .community-hero .hero-actions { align-items: stretch; }
+  .community-hero .hero-actions .button { width: 100%; }
+  .community-hero-note { margin-top: -30px; }
+}
+
+/* Keep the coded personal sigil hidden, including where brand styles set display. */
+.brand-symbol[hidden] { display: none !important; }
+
+/* BRAND SYSTEM — Community • Restoration • Advocacy • Growth
+   Botanical calm and golden-hour warmth throughout the experience. */
+:root {
+  --forest: #28584b;
+  --sage-light: #e8efe5;
+  --sunrise: #f3c7a4;
+  --sunset: #cf987f;
+  --earth: #785b4b;
+  --nature-glow: rgba(243, 199, 164, .28);
+  --radius: 24px;
+  --shadow: 0 16px 45px rgba(40, 88, 75, .10);
+}
+body { background: #f7f4eb; }
+.site-header { background: rgba(250, 248, 241, .94); border-bottom-color: rgba(40, 88, 75, .14); }
+.brand-name { color: var(--forest); }
+.eyebrow { letter-spacing: .13em; }
+.button, .nav-cta { transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.community-hero {
+  background:
+    radial-gradient(ellipse at 86% 12%, rgba(243, 199, 164, .48), transparent 45%),
+    radial-gradient(ellipse at 7% 85%, rgba(168, 178, 161, .33), transparent 48%),
+    linear-gradient(130deg, #fcf8ed 0%, #f2f1e8 54%, #e7eee7 100%);
+}
+.community-photo-frame { border-color: #fdfaf2; box-shadow: 0 24px 65px rgba(40,88,75,.18); }
+.community-hero-note { border-color: rgba(40,88,75,.17); }
+.community-hero-note span { color: var(--earth); }
+.community-hero .hero-caption { color: var(--forest); }
+.section { position: relative; }
+#about {
+  background: linear-gradient(160deg, #f8f6ed 0%, #eaf0e8 100%);
+}
+#explore {
+  background: linear-gradient(160deg, #edf2ea 0%, #f8f3e8 100%);
+}
+#offerings {
+  background: linear-gradient(165deg, #faf7ef 0%, #f0ece2 100%);
+}
+#journal {
+  background:
+    radial-gradient(ellipse at 78% 20%, rgba(243,199,164,.45), transparent 52%),
+    linear-gradient(145deg, #e8ede6, #f8efe3 65%, #eed5c6);
+}
+#connect {
+  background:
+    radial-gradient(ellipse at 90% 5%, rgba(207,152,127,.23), transparent 50%),
+    linear-gradient(145deg, #f7f4eb, #e7eee6);
+}
+#about img, #explore img, #offerings img, #journal img {
+  object-fit: cover;
+  filter: saturate(.86) contrast(.98);
+}
+.glass-panel { border-color: rgba(255,255,255,.72); }
+:where(a,button):focus-visible { outline: 3px solid var(--forest); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .button, .nav-cta { transition: none; }
+  .button:hover { transform: none; }
+}
+
+/* Signature typography — free Google Fonts, intentionally used as accents only.
+   Alex Brush: expressive signature; Parisienne: softer reflective accent;
+   Allura: available for future campaign materials. */
+:root {
+  --font-signature: "Allura", cursive;
+  --font-reflection: "Allura", cursive;
+  --font-soft-script: "Allura", cursive;
+}
+.community-hero .hero-caption {
+  font-family: var(--font-signature);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+#about .section-heading h2 span,
+#journal h2 span {
+  font-family: var(--font-reflection);
+  font-weight: 400;
+  font-size: 1.18em;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+@media (max-width: 640px) {
+  .community-hero .hero-caption { font-size: 1.7rem; }
+}
+
+/* Seven-page site system */
+.inner-hero { padding: clamp(85px, 11vw, 150px) 6% clamp(65px, 8vw, 105px); background: radial-gradient(ellipse at 88% 16%, rgba(243,199,164,.5),transparent 43%),linear-gradient(135deg,#eaf0e7,#faf6ed 65%,#f2e2d4); }
+.inner-hero-content { max-width: 950px; margin: auto; }
+.inner-hero h1 { max-width: 840px; margin: 12px 0 18px; color: var(--forest); font-family: Georgia,"Times New Roman",serif; font-size: clamp(2.6rem,5vw,4.6rem); line-height: 1.12; }
+.inner-hero p:not(.eyebrow) { max-width: 650px; font-size: clamp(1.05rem,2vw,1.25rem); }
+.page-section { max-width: 1180px; margin: 0 auto; padding: clamp(55px,7vw,95px) 5%; }
+.page-section h2 { color: var(--forest); font-family: Georgia,"Times New Roman",serif; line-height:1.2; }
+.page-section p { max-width: 75ch; }
+.founder-layout { display:grid; grid-template-columns: minmax(240px,.75fr) minmax(0,1.3fr); align-items:start; gap:clamp(28px,5vw,75px); }
+.portrait-frame { border-radius: 24px; padding: 12px; background: #fffdf7; box-shadow: var(--shadow); }
+.portrait-frame img { width:100%; aspect-ratio: 3/4; object-fit:cover; border-radius:16px; }
+.portrait-placeholder { aspect-ratio:3/4; display:grid; place-items:center; padding:20px; border-radius:16px; text-align:center; color:var(--forest); background:linear-gradient(145deg,#d9e6d8,#f3dfc9); }
+.founder-layout blockquote { margin:28px 0 0; padding-left:20px; border-left:3px solid var(--sunset); font-family:var(--font-signature); font-size:clamp(1.8rem,3vw,2.4rem); line-height:1.3; color:var(--forest); }
+.values-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; margin:28px 0 36px; }
+.brand-tile { padding:clamp(23px,3vw,36px); border:1px solid rgba(40,88,75,.12); border-radius:22px; background:#fffdf8; box-shadow:0 12px 35px rgba(40,88,75,.06); }
+.brand-tile h2,.brand-tile h3 { margin:0 0 12px; color:var(--forest); font-size:clamp(1.25rem,2vw,1.6rem); }
+.brand-tile p { margin:0 0 16px; }
+.text-link { color:var(--teal-deep); text-decoration:underline; text-underline-offset:4px; font-weight:600; }
+.coming-soon { display:inline-block; padding:6px 12px; border-radius:40px; background:#e8efe5; color:#28584b; font-size:.8rem; font-weight:700; }
+.reflection-panel { margin-top:38px; padding:clamp(30px,5vw,65px); border-radius:24px; background:linear-gradient(135deg,#e8eee5,#f7ede2); }
+.page-note { font-size:.9rem; color:var(--muted); }
+@media(max-width:850px) { .founder-layout {grid-template-columns:1fr;} .portrait-frame {max-width:480px;} .values-grid {grid-template-columns:1fr 1fr;} }
+@media(max-width:600px) { .values-grid {grid-template-columns:1fr;} .inner-hero {padding-top:70px;} }
+
+/* Keep the expanded seven-link navigation usable on laptops. */
+@media(min-width: 1001px) {
+  .navigation { gap: clamp(8px,1.3vw,20px); }
+  .navigation a { font-size: clamp(11px,.9vw,13px); white-space: nowrap; }
+  .site-header { padding-left: max(3%,calc((100% - 1280px)/2)); padding-right:max(3%,calc((100% - 1280px)/2)); }
+}
+
+/* Approved typography: Allura is the only decorative script. */
+:root { --font-signature:"Allura",cursive; --font-reflection:"Allura",cursive; --font-soft-script:"Allura",cursive; }
+
+/* Approved brand typography: Playfair Display headings, Allura signature accents. */
+:root { --font-heading: "Playfair Display", Georgia, serif; }
+.hero h1, .section-heading h2, .journal-content h2, .purpose-card h3, .brand-name, .inner-hero h1, .page-section h2, .brand-tile h2, .brand-tile h3, .offering-copy h3, .explore-card h3 { font-family: var(--font-heading); }
+
+/* Restorative garden visual on Community page */
+.community-garden-visual { position:relative; max-width:1180px; margin:clamp(28px,5vw,60px) auto 0; overflow:hidden; border-radius:24px; min-height:300px; background:#b5c9ae; box-shadow:0 18px 48px rgba(40,88,75,.13); }
+.community-garden-visual img { width:100%; height:clamp(320px,42vw,540px); object-fit:cover; display:block; border-radius:0; }
+.community-garden-overlay { position:absolute; inset:auto 0 0; padding:clamp(25px,4vw,50px); color:#fff; background:linear-gradient(0deg,rgba(19,52,39,.85),rgba(19,52,39,0)); }
+.community-garden-overlay .eyebrow { color:#e8f0d8; }
+.community-garden-overlay p:last-child { max-width:650px; margin:0; font-family:var(--font-heading); font-size:clamp(1.5rem,3vw,2.5rem); line-height:1.25; }
+@media(max-width:1250px) { .community-garden-visual {margin-left:5%;margin-right:5%;} }
