@@ -17,6 +17,13 @@ owner has authorized, with policy enforced in code.
 - Deployed: no
 - Branch: `develop-ai-studio` only
 
+## Private browser dashboard
+
+A local browser interface and Windows desktop shortcut are available.
+See [dashboard/README.md](dashboard/README.md) for installation and usage.
+It uses your existing Hive settings, requires confirmation before each AI run,
+and keeps history on your computer. The dashboard requires Node.js 22.13 or newer.
+
 ## Requirements
 
 Node.js 20 or newer. No third-party dependencies.
