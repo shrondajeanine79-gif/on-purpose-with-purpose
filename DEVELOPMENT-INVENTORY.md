@@ -1,6 +1,16 @@
 # DEVELOPMENT INVENTORY — The Purpose Network
 
-_Generated 2026-11-02 during workspace migration. No files were committed or pushed._
+_Snapshot generated 2026-11-02 at migration time. See the post-migration update below for the owner-approved cleanup and current Git state._
+
+## Post-migration update (2026-11-02)
+
+- Local cleanup commit created on `develop-ai-studio`; nothing was pushed.
+- `.env` and `.env.txt` were removed from the current index and `.gitignore` now excludes them.
+- `opencode.json.backup` and the unused duplicate `images/SITE.jpg` were removed.
+- The 36 CRLF-only working-tree changes were normalized to LF; no substantive site content changed.
+- Node.js v22.23.4 was installed via nvm; `npm test` passes 164/164.
+- The working tree is clean and the branch is ahead of `origin/develop-ai-studio` by the local cleanup commit(s).
+- The old `.env.txt` values remain in public Git history; the owner reports the credentials were rotated. No history purge was performed.
 
 ## Overview
 
@@ -38,7 +48,7 @@ node bin/purpose.js status
 npm run dashboard               # local dashboard, 127.0.0.1:8788
 ```
 
-Requirements: Node.js 20+ (dashboard needs 22.13+), no third-party npm dependencies. Node.js is **not currently installed in WSL**.
+Requirements: Node.js 20+ (dashboard needs 22.13+), no third-party npm dependencies. Node.js v22.23.4 is installed in WSL via nvm.
 
 ## Configuration & environment files
 
@@ -65,8 +75,7 @@ Other referenced variables (from source): `HIVE_API_KEY`, `PURPOSE_DB_PATH`, `PU
 
 ## Duplicates / potentially obsolete files
 
-- `opencode.json` and `opencode.json.backup` are **byte-identical**.
-- `images/SITE.jpg` and `ONPWPIMAGES/SITE.jpg` are **byte-identical**.
+- Resolved during cleanup: `opencode.json.backup` and the unused duplicate `images/SITE.jpg` were removed. `ONPWPIMAGES/SITE.jpg` remains and is referenced by `ONPWPIMAGES/desktop.ini`.
 - `assets/css/style.css` and `css/style.css` are **different** files (different generations), not duplicates.
 - `assets/js/main.js` and `js/site.js` serve different layers; both are referenced by different pages — verify before removing.
 - Windows metadata: `ONPWPIMAGES/desktop.ini`.
@@ -81,7 +90,7 @@ Other referenced variables (from source): `HIVE_API_KEY`, `PURPOSE_DB_PATH`, `PU
 
 ## Security notes
 
-- `.env` / `.env.txt` are **present in Git history** (one historical commit) even though the current index stages their deletion. The repository is public; rotate any credentials that were ever committed and plan a history purge only with explicit owner approval.
+- `.env` / `.env.txt` were **present in Git history** (one historical commit) and the current commit removes them from the index. The owner reports the exposed credentials were rotated. The repository is public; a history purge still requires explicit owner approval.
 - File permissions of the local copies were tightened to `600`.
 - Generations of Purpose is private and unaffected by this repository.
 ## Directory tree
