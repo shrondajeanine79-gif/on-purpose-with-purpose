@@ -1,1 +1,6 @@
 .vs/
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
