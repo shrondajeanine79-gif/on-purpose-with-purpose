@@ -3,159 +3,366 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>On Purpose With Purpose | Live with intention. Grow with purpose.</title>
 <meta name="description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself, join the live Mid Week Check-In, and be first to hear about the Permission Slips workshop.">
-<meta name="theme-color" content="#F5F0E1">
 <meta property="og:title" content="On Purpose With Purpose | Live with intention. Grow with purpose.">
-<meta property="og:description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself, join the live Mid Week Check-In, and be first to hear about the Permission Slips workshop.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/shronda.jpg">
+<meta property="og:image" content="images/share-image.jpg">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#1F3D2B">
+<title>On Purpose With Purpose | Live with intention. Grow with purpose.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F5F0E1;--paper:#FBF8EF;--green:#1F3D2B;--moss:#5C7A56;--sage:#DDE5D0;--gold:#E0A526;--plum:#4A2545;--ink:#22291F;--muted:#5E6657;
+--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);line-height:1.08;font-weight:600;color:var(--green)}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);letter-spacing:-.01em}
+p{max-width:62ch}
+.eyebrow{font-size:.92rem;font-weight:700;color:var(--moss);margin-bottom:14px}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;cursor:pointer;font:inherit;font-weight:700}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#2a1d00}.btn-gold:hover{background:#f0b63a}
+.btn-green{background:var(--green);color:var(--cream)}
+.btn-line{border-color:currentColor}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 14px;z-index:99}.skip:focus{left:8px}
+.preview{background:#2b2b2b;color:#fff;text-align:center;font-size:.85rem;padding:6px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:var(--cream);border-bottom:1px solid rgba(31,61,43,.12)}
+.crisis{background:var(--plum);color:#fff;border-bottom:3px solid var(--gold);padding:9px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;font-size:.95rem}
+.crisis strong{font-family:var(--serif);font-size:1.15rem}
+.crisis a{background:var(--gold);color:#2a1d00;font-weight:700;text-decoration:none;padding:6px 14px;border-radius:999px;line-height:1.3}
+.crisis a:hover{background:#fff}
+.nav{display:flex;align-items:center;gap:18px;min-height:74px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--green);text-decoration:none;line-height:1.15;margin-right:auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;object-fit:contain}
+footer .brand img{width:68px;height:68px}
+.brand small{display:block;font-family:var(--sans);font-weight:500;font-size:.74rem;color:var(--muted)}
+.phone{font-weight:700;text-decoration:none;color:var(--green)}
+.nav .btn{padding:10px 20px;font-size:.93rem}
+.menu{background:none;border:2px solid var(--green);color:var(--green);border-radius:999px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
+.panel{display:none;position:absolute;left:0;right:0;top:100%;background:var(--green);padding:32px 0 40px}
+.panel.open{display:block}
+.panel ul{list-style:none;display:grid;gap:6px}
+.panel a{font-family:var(--serif);font-size:clamp(1.8rem,5vw,2.8rem);color:var(--cream);text-decoration:none}
+.panel a:hover{color:var(--gold)}
+
+/* photo slots */
+.slot{position:relative;overflow:hidden}
+.slot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g1{background:linear-gradient(150deg,#8fae7e,#2c5239)}
+.g2{background:linear-gradient(150deg,#e9c46a,#9a6a12)}
+.g3{background:linear-gradient(150deg,#8a5a86,#4A2545)}
+.g4{background:linear-gradient(150deg,#5C7A56,#1F3D2B)}
+
+/* hero */
+.hero{min-height:82vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(150deg,#2c5239,#4A2545)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,30,20,.82),rgba(15,30,20,.15) 65%)}
+.hero .wrap{position:relative;z-index:1;padding-top:80px;padding-bottom:72px}
+.hero .eyebrow{color:#f3dfa0}
+.hero h1{color:#fff;font-size:clamp(2.8rem,7.5vw,6rem);letter-spacing:-.025em;max-width:13ch}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.lead{font-size:1.25rem;margin:22px 0 30px;max-width:56ch;color:#f3f0e6}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.hero small{display:block;margin-top:22px;color:#e8e4d4}
+
+/* statement */
+.statement{padding:96px 0 40px;text-align:center}
+.statement blockquote{font-family:var(--serif);font-size:clamp(1.9rem,4.6vw,3.4rem);line-height:1.15;color:var(--green);max-width:20ch;margin:0 auto}
+.statement cite{display:block;margin-top:20px;font-style:normal;font-weight:700;color:var(--moss)}
+
+/* experience rail */
+section{padding:84px 0}
+.railwrap{position:relative}
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 14px;scrollbar-width:thin}
+.xc{flex:0 0 min(400px,82vw);aspect-ratio:3/4;border-radius:26px;scroll-snap-align:start;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;position:relative}
+.xc::after,.jt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,30,20,.85),transparent 62%);z-index:0}
+.xc>*,.jt>*{position:relative;z-index:1}
+.xc small,.jt small{font-weight:700;font-size:.85rem;color:#f3dfa0}
+.xc h3{color:#fff;font-size:2rem;margin:6px 0 10px}
+.xc p{font-size:1rem;color:#f0ede2;margin-bottom:16px}
+.xc a.more{font-weight:700;color:#fff;text-decoration:underline;text-underline-offset:4px}
+.arrows{display:flex;gap:10px;justify-content:flex-end;margin-bottom:14px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:2px solid var(--green);background:none;color:var(--green);font-size:1.3rem;cursor:pointer}
+.arrows button:hover{background:var(--green);color:var(--cream)}
+
+/* journeys */
+.paths{background:var(--sage)}
+.head{margin-bottom:40px}
+.head p{margin-top:12px;color:var(--muted);font-size:1.1rem}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.jt{aspect-ratio:4/5;border-radius:26px;color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;position:relative;transition:transform .2s}
+.jt:hover{transform:translateY(-6px)}
+.jt strong{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1.1;margin:6px 0 10px}
+.jt .tag{align-self:flex-start;background:var(--gold);color:#2a1d00;font-weight:700;font-size:.82rem;padding:3px 12px;border-radius:999px}
+.jt .body{font-size:.98rem;color:#f0ede2}
+.jt .go{margin-top:14px;font-weight:700}
+
+/* testimonial */
+.quote{background:var(--green);text-align:center;padding:96px 0}
+.quote p{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.25;color:var(--cream);margin:0 auto;max-width:28ch}
+.quote cite{display:block;margin-top:22px;font-style:normal;font-weight:700;color:var(--gold)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal .slot{aspect-ratio:1;border-radius:22px}
+.gal .wide{grid-column:span 2;aspect-ratio:2/1}
+
+/* offer */
+.offer{background:var(--gold);padding:0}
+.offer-grid{display:grid;grid-template-columns:1fr 1fr}
+.offer .slot{min-height:420px}
+.offer .txt{padding:64px 48px}
+.offer h2{color:#2a1d00}
+.offer .eyebrow{color:#5a4207}
+.offer p{margin:14px 0 22px;color:#3b2c06}
+.offer ul{margin:0 0 22px 20px;color:#3b2c06}
+form{display:flex;flex-wrap:wrap;gap:12px;max-width:520px}
+form input{flex:1 1 200px;padding:14px 20px;border-radius:999px;border:2px solid #2a1d00;background:#fff8e6;font:inherit}
+.fine{margin-top:14px;font-size:.92rem;color:#3b2c06}
+
+/* permission */
+.perm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.ticket{background:var(--paper);border:2px dashed var(--plum);border-radius:20px;padding:36px 30px;text-align:center;transform:rotate(-2deg)}
+.ticket small{display:block;font-weight:700;color:var(--plum);font-size:.85rem}
+.ticket h3{font-size:2rem;margin:10px 0}
+.ticket p{margin:0 auto 16px;font-family:var(--serif);font-size:1.25rem;color:var(--green)}
+.ticket em{font-family:var(--serif);color:var(--plum)}
+.perm p{margin:16px 0 26px;color:var(--muted)}
+
+/* host + contact */
+.host{background:var(--paper)}
+.host-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:28px}
+.host p{margin:14px 0}
+.host blockquote{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--green);border-left:6px solid var(--gold);padding-left:20px;margin:20px 0}
+.contact{margin:22px 0 26px;font-size:1.1rem}
+.contact a{font-weight:700;color:var(--green)}
+
+/* help band + footer */
+.helpband{background:var(--plum);color:#fff;padding:64px 0;border-top:6px solid var(--gold)}
+.helpband h2{color:#fff}
+.helpband .sub{margin:10px 0 30px;font-size:1.1rem;color:#f0e2ee}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hcard{background:var(--cream);color:var(--ink);border-radius:22px;padding:26px}
+.hcard h3{font-size:1.2rem;margin-bottom:10px}
+.hcard .num{display:block;font-family:var(--serif);font-weight:700;font-size:1.9rem;color:var(--plum);text-decoration:none;margin-bottom:8px;line-height:1.1}
+.hcard p{font-size:.98rem}
+.hcard a{color:var(--plum);font-weight:700}
+footer{background:var(--green);color:#cfd9c6;padding:56px 0 36px;font-size:.96rem}
+footer a{color:var(--cream)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+footer .brand{color:var(--cream)}
+footer .tagline{margin-top:10px}
+footer .list{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:14px}
+footer .col{display:grid;gap:6px;align-content:start}
+footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-width:70ch}
+
+@media (max-width:860px){
+  .phone{display:none}
+  .brand{font-size:1rem}.brand img{width:38px;height:38px}.brand small{display:none}
+  .nav>.btn{padding:9px 14px;font-size:.85rem}
+  .crisis{font-size:.85rem;padding:8px 12px}
+  .crisis strong{flex-basis:100%;text-align:center;font-size:1.05rem}
+  .crisis a{padding:5px 12px}
+  .jgrid,.hgrid,.perm-grid,.host-grid,.offer-grid{grid-template-columns:1fr;gap:36px}
+  .jgrid,.hgrid{gap:18px}
+  .offer .slot{min-height:260px}.offer .txt{padding:48px 24px}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .ticket{transform:none}
+  section{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
 </head>
 <body>
-<a href="#main" class="skip">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html">On Purpose With Purpose<small>Healing &bull; Growth &bull; Community</small></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav class="nav" id="nav" aria-label="Main">
-      <a class="link" href="index.html" aria-current="page">Home</a>
-      <a class="link" href="about.html">About</a>
-      <a class="link" href="live.html">Live</a>
-      <a class="link" href="permission-slips.html">Permission Slips</a>
-      <a class="link" href="contact.html">Contact</a>
-      <a class="btn btn-primary" href="free-guide.html">Get the Free Guide</a>
-    </nav>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview">Preview only. Draft of the updated homepage. Not live yet.</div>
+
+<header>
+  <div class="crisis" role="region" aria-label="Crisis support">
+    <strong>Need help now?</strong>
+    <a href="tel:988">Suicide &amp; crisis: call or text 988</a>
+    <a href="tel:18007997233">Domestic violence: 1-800-799-7233</a>
+    <a href="tel:18883737888">Human trafficking: 1-888-373-7888</a>
   </div>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="On Purpose With Purpose emblem" width="46" height="46"><span>On Purpose With Purpose<small>Healing &bull; Growth &bull; Community</small></span></a>
+    <a class="phone" href="tel:4804423683">480 442 3683</a>
+    <a class="btn btn-gold" href="free-guide.html">Get the Free Guide</a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="panel">Menu</button>
+  </div>
+  <nav class="panel" id="panel" aria-label="Main"><div class="wrap"><ul>
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="live.html">Live</a></li><li><a href="permission-slips.html">Permission Slips</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div></nav>
 </header>
+
 <main id="main">
-<section class="hero on-dark" id="top">
+
+<section class="hero slot" style="padding:0">
+  <img src="images/hero.jpg" alt="" onerror="this.remove()">
   <div class="wrap">
-    <div>
-      <div class="eyebrow light">A space to pause, grow and become</div>
-      <h1>Live with intention. <em>Grow with purpose.</em></h1>
-      <p class="lede">Real conversations, emotional growth and healing, with practical tools for stronger boundaries and a deeper sense of purpose. You do not have to have it all figured out to begin.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="free-guide.html">Get the Free Guide</a>
-        <a class="btn btn-ghost" href="live.html">Watch Mid Week Check-In</a>
-      </div>
-      <p class="micro">Free guide. Written by Shronda, author of <em>The Power of Words</em>.</p>
+    <p class="eyebrow">A space to pause, grow and become</p>
+    <h1>Live with intention. <em>Grow with purpose.</em></h1>
+    <p class="lead">Real conversations, emotional growth and healing, with practical tools for stronger boundaries and a deeper sense of purpose. You do not have to have it all figured out to begin.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="free-guide.html">Get the Free Guide</a>
+      <a class="btn btn-line" style="color:#fff" href="live.html">Watch Mid Week Check-In</a>
     </div>
-    <aside class="guide-card" aria-label="Free guide">
-      <div class="eyebrow">Free guide</div>
-      <h3>8 Ways to Be Good to Yourself</h3>
-      <ul>
-        <li>Set boundaries that protect your energy</li>
-        <li>Quiet the harsh inner critic</li>
-        <li>Rest without guilt or explanation</li>
-        <li>Five more, each with a quick &ldquo;try this today&rdquo;</li>
-      </ul>
-      <a class="btn btn-primary" style="display:block" href="free-guide.html">Send Me the Guide</a>
-    </aside>
+    <small>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</small>
   </div>
 </section>
 
-<section class="live" id="live">
+<section class="statement">
   <div class="wrap">
-    <a class="live-visual" href="live.html" aria-label="About Mid Week Check-In">
-      <span class="live-badge"><i></i> LIVE</span>
-      <span class="play"></span>
-    </a>
-    <div>
-      <div class="eyebrow">Live &bull; Free &bull; Every week</div>
-      <h2>Mid Week Check-In</h2>
-      <div class="rule"></div>
+    <blockquote>&ldquo;We don&rsquo;t just exist. We exist on purpose&mdash;with purpose.&rdquo;</blockquote>
+    <cite>Shronda</cite>
+  </div>
+</section>
+
+<section style="padding-top:40px" id="experiences">
+  <div class="wrap arrows"><button type="button" id="prev" aria-label="Previous">&lsaquo;</button><button type="button" id="next" aria-label="Next">&rsaquo;</button></div>
+  <div class="rail" id="rail" tabindex="0" aria-label="Experiences">
+    <article class="xc slot g1"><img src="images/live.jpg" alt="" onerror="this.remove()">
+      <small>Live &bull; Free &bull; Every week</small><h3>Mid Week Check-In</h3>
       <p>Halfway through the week is when we run low. Join me live for a real conversation, a reset, and a reminder that you are not doing this alone.</p>
-      <div class="when">[DAY &amp; TIME] &nbsp;|&nbsp; Live on Facebook</div>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://facebook.com">Watch Live on Facebook</a>
-        <a class="btn btn-outline" href="live.html">Learn more</a>
-      </div>
-    </div>
+      <a class="more" href="live.html">Learn more</a></article>
+    <article class="xc slot g3"><img src="images/permission.jpg" alt="" onerror="this.remove()">
+      <small>The workshop</small><h3>Permission Slips</h3>
+      <p>You have permission to be you 100%.</p>
+      <a class="more" href="permission-slips.html">Learn More</a></article>
+    <article class="xc slot g2"><img src="images/guide.jpg" alt="" onerror="this.remove()">
+      <small>Free guide</small><h3>8 Ways to Be Good to Yourself</h3>
+      <p>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</p>
+      <a class="more" href="free-guide.html">Send Me the Guide</a></article>
   </div>
 </section>
 
-<section id="paths">
+<section class="paths" id="paths">
   <div class="wrap">
-    <div class="section-head center">
-      <div class="eyebrow">Start where you are</div>
+    <div class="head">
+      <p class="eyebrow">Start where you are</p>
       <h2>What do you need right now?</h2>
-      <div class="rule"></div>
       <p>Pick the one that fits today. Each path starts with a small step you can take in minutes.</p>
     </div>
-    <div class="paths">
-      <a class="path" href="free-guide.html"><span class="need">I need peace</span><h3>Pause</h3><p>Rest without justifying it, set the boundary, and let go of the guilt. Begin with the practices that calm your whole system.</p><span class="go">Start with the free guide &rarr;</span></a>
-      <a class="path" href="live.html"><span class="need">I need clarity</span><h3>Reset</h3><p>Say what is true, notice the pattern, and choose a different response. Bring your questions to the live Mid Week Check-In.</p><span class="go">Join the next live &rarr;</span></a>
-      <a class="path" href="permission-slips.html"><span class="need">I need community</span><h3>Rise</h3><p>You were never meant to heal alone. Be first in the circle for Permission Slips and our community gatherings.</p><span class="go">Hold my spot &rarr;</span></a>
-    </div>
-  </div>
-</section>
-<section class="optin center on-dark" id="free-guide">
-  <div class="wrap">
-    <div class="eyebrow light">Free guide &bull; Get in touch</div>
-    <h2>Be good to yourself, starting today.</h2>
-    <div class="rule"></div>
-    <p>Contact Shronda to ask about <strong>8 Ways to Be Good to Yourself</strong>, Permission Slips workshops, and community gatherings.</p>
-      <p><a class="btn btn-primary" href="contact.html#contact-form">Contact Shronda</a></p>
-    <p class="fine">Use the contact form to ask about the guide or upcoming gatherings. Automatic newsletter signup is not currently available.</p>
-  </div>
-</section>
-<section class="slips" id="permission-slips">
-  <div class="wrap">
-    <div class="slip-card">
-      <span class="eyebrow">Admit one &bull; You</span>
-      <div class="big">Permission Slips</div>
-      <div class="tag">You have permission to be you 100%.</div>
-      <div class="sig">Signed, You</div>
-    </div>
-    <div>
-      <div class="eyebrow">The workshop</div>
-      <h2>Stop waiting for someone to hand you permission.</h2>
-      <div class="rule"></div>
-      <p>Permission Slips is a healing and growth workshop for anyone who has been waiting to be told it is okay to rest, to say no, to grieve, to begin again, or to simply be themselves.</p>
-      <a class="btn btn-primary" href="permission-slips.html">Learn More</a>
+    <div class="jgrid">
+      <a class="jt slot g4" href="free-guide.html"><img src="images/peace.jpg" alt="" onerror="this.remove()"><span class="tag">Pause</span><strong>I need peace</strong><span class="body">Rest without justifying it, set the boundary, and let go of the guilt. Begin with the practices that calm your whole system.</span><span class="go">Start with the free guide &rarr;</span></a>
+      <a class="jt slot g1" href="live.html"><img src="images/clarity.jpg" alt="" onerror="this.remove()"><span class="tag">Reset</span><strong>I need clarity</strong><span class="body">Say what is true, notice the pattern, and choose a different response. Bring your questions to the live Mid Week Check-In.</span><span class="go">Join the next live &rarr;</span></a>
+      <a class="jt slot g3" href="permission-slips.html"><img src="images/community.jpg" alt="" onerror="this.remove()"><span class="tag">Rise</span><strong>I need community</strong><span class="body">You were never meant to heal alone. Be first in the circle for Permission Slips and our community gatherings.</span><span class="go">Hold my spot &rarr;</span></a>
     </div>
   </div>
 </section>
 
-<section class="about" id="about">
+<section class="quote">
   <div class="wrap">
-    <div class="photo-frame soft"><img src="images/shronda.jpg" alt="Portrait of Shronda, founder of On Purpose With Purpose" width="900" height="1200" loading="lazy"></div>
-    <div>
-      <div class="eyebrow">Meet your host</div>
-      <h2><span class="script purple" style="font-size:1.8em">Shronda</span></h2>
-      <div class="rule"></div>
-      <p>Author, inspirational speaker, community advocate, and the visionary behind On Purpose With Purpose, a community dedicated to personal growth, emotional wellness, and purposeful living.</p>
-      <p><em>&ldquo;We don&rsquo;t just exist. We exist on purpose&mdash;with purpose.&rdquo;</em></p>
-      <a class="btn btn-primary" href="about.html">Read Her Story</a>
+    <p>[A viewer comment goes here]</p>
+    <cite>[Name]</cite>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head"><h2>Gallery</h2></div>
+    <div class="gal">
+      <div class="slot g1 wide"><img src="images/gallery1.jpg" alt="" onerror="this.remove()"></div>
+      <div class="slot g2"><img src="images/gallery2.jpg" alt="" onerror="this.remove()"></div>
+      <div class="slot g3"><img src="images/gallery3.jpg" alt="" onerror="this.remove()"></div>
+      <div class="slot g4"><img src="images/gallery4.jpg" alt="" onerror="this.remove()"></div>
+      <div class="slot g2"><img src="images/gallery5.jpg" alt="" onerror="this.remove()"></div>
+      <div class="slot g3 wide"><img src="images/gallery6.jpg" alt="" onerror="this.remove()"></div>
     </div>
   </div>
 </section>
+
+<section class="offer" id="join">
+  <div class="offer-grid">
+    <div class="slot g2"><img src="images/offer.jpg" alt="" onerror="this.remove()"></div>
+    <div class="txt">
+      <p class="eyebrow">Free guide &bull; Instant delivery</p>
+      <h2>Be good to yourself, starting today.</h2>
+      <p>Get <strong>8 Ways to Be Good to Yourself</strong> in your inbox, plus first word on Permission Slips workshops and community gatherings.</p>
+      <ul><li>Set boundaries that protect your energy</li><li>Quiet the harsh inner critic</li><li>Rest without guilt or explanation</li><li>Five more, each with a quick &ldquo;try this today&rdquo;</li></ul>
+      <form action="free-guide.html" method="get">
+        <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+        <button class="btn btn-green" type="submit">Send Me the Guide</button>
+      </form>
+      <p class="fine">No spam, ever. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<section class="perm" id="permission">
+  <div class="wrap perm-grid">
+    <div class="ticket" aria-hidden="true"><small>Admit one &bull; You</small><h3>Permission Slips</h3><p>You have permission to be you 100%.</p><em>Signed, You</em></div>
+    <div>
+      <p class="eyebrow">The workshop</p>
+      <h2>Stop waiting for someone to hand you permission.</h2>
+      <p>Permission Slips is a healing and growth workshop for anyone who has been waiting to be told it is okay to rest, to say no, to grieve, to begin again, or to simply be themselves.</p>
+      <a class="btn btn-green" href="permission-slips.html">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="host" id="host">
+  <div class="wrap host-grid">
+    <div class="portrait slot g3"><img src="images/shronda.jpg" alt="Portrait of Shronda, founder of On Purpose With Purpose" onerror="this.remove()"></div>
+    <div>
+      <p class="eyebrow">Meet your host</p>
+      <h2>Shronda</h2>
+      <p>Author, inspirational speaker, community advocate, and the visionary behind On Purpose With Purpose, a community dedicated to personal growth, emotional wellness, and purposeful living.</p>
+      <blockquote>&ldquo;We don&rsquo;t just exist. We exist on purpose&mdash;with purpose.&rdquo;</blockquote>
+      <p class="contact">Tel: <a href="tel:4804423683">480 442 3683</a><br>Email: <a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a></p>
+      <div class="cta-row"><a class="btn btn-green" href="about.html">Read Her Story</a><a class="btn btn-line" style="color:var(--green)" href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<section class="helpband" id="help" aria-labelledby="helph">
+  <div class="wrap">
+    <h2 id="helph">Need help now?</h2>
+    <p class="sub">Free and open 24/7. If you are in immediate danger, call 911.</p>
+    <div class="hgrid">
+      <div class="hcard"><h3>Suicide &amp; Crisis Lifeline</h3><a class="num" href="tel:988">Call or text 988</a><p>Chat: <a href="https://988lifeline.org/chat/">988lifeline.org/chat</a></p></div>
+      <div class="hcard"><h3>National Domestic Violence Hotline</h3><a class="num" href="tel:18007997233">1-800-799-7233</a><p>Text START to <a href="sms:88788?&amp;body=START">88788</a><br>TTY 1-800-787-3224<br>Chat: <a href="https://www.thehotline.org">thehotline.org</a></p></div>
+      <div class="hcard"><h3>National Human Trafficking Hotline</h3><a class="num" href="tel:18883737888">1-888-373-7888</a><p>Text HELP or INFO to <a href="sms:233733?&amp;body=HELP">233733</a><br>TTY 711<br>Chat: <a href="https://humantraffickinghotline.org/chat">humantraffickinghotline.org</a></p></div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="row">
       <div>
-        <a class="brand" href="index.html">On Purpose With Purpose</a>
-        <p style="margin:10px 0 0;max-width:360px">Made with intention. Rooted in growth. Open to becoming.</p>
-        <div class="social-icons "><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi" title="Ko-fi"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a><a href="https://shrondajeanine79-gif.github.io/link-in-bio/" target="_blank" rel="noopener noreferrer" aria-label="Link in Bio" title="Link in Bio"><i class="fa-solid fa-link" aria-hidden="true"></i></a></div>
+        <a class="brand" href="index.html"><img src="images/logo.png" alt="On Purpose With Purpose emblem" width="68" height="68"><span>On Purpose With Purpose</span></a>
+        <p class="tagline">Made with intention. Rooted in growth. Open to becoming.</p>
+        <div class="list"><a href="https://facebook.com">Facebook</a><a href="https://youtube.com">YouTube</a><a href="https://instagram.com">Instagram</a><a href="https://tiktok.com">TikTok</a><a href="https://linkedin.com">LinkedIn</a><a href="https://ko-fi.com">Ko-fi</a><a href="https://shrondajeanine79-gif.github.io/link-in-bio/">Link in Bio</a></div>
       </div>
-      <div>
-        <div class="social" style="margin:0 0 14px">
-          <a href="about.html">About</a><a href="live.html">Live</a><a href="permission-slips.html">Permission Slips</a><a href="contact.html">Contact</a>
-        </div>
-        <a class="btn btn-primary" href="free-guide.html">Get the Free Guide</a>
-        <p style="margin:14px 0 0;font-size:14px">Or <a href="https://shrondajeanine79-gif.github.io/link-in-bio/">visit our link in bio</a></p>
-      </div>
+      <div class="col"><a href="about.html">About</a><a href="live.html">Live</a><a href="permission-slips.html">Permission Slips</a><a href="contact.html">Contact</a></div>
+      <div class="col"><a href="tel:4804423683">480 442 3683</a><a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a><span style="margin-top:10px"><a class="btn btn-gold" style="color:#2a1d00" href="free-guide.html">Get the Free Guide</a></span><span>Or <a href="https://shrondajeanine79-gif.github.io/link-in-bio/">visit our link in bio</a></span></div>
     </div>
-    <div class="legal">Educational content is not a substitute for professional help. If you are struggling, please reach out to a licensed professional or someone you trust.<br>&copy; On Purpose With Purpose</div>
+    <small class="legal">Educational content is not a substitute for professional help. If you are struggling, please reach out to a licensed professional or someone you trust.<br>&copy; On Purpose With Purpose</small>
   </div>
 </footer>
-<div class="mobile-bar"><a class="btn btn-primary" href="free-guide.html">Get the Free Guide</a></div>
-<script src="js/site.js"></script>
+
+<script>
+var m=document.getElementById('menu'),p=document.getElementById('panel');
+m.addEventListener('click',function(){var o=p.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'Close':'Menu'});
+var r=document.getElementById('rail');
+document.getElementById('next').onclick=function(){r.scrollBy({left:420,behavior:'smooth'})};
+document.getElementById('prev').onclick=function(){r.scrollBy({left:-420,behavior:'smooth'})};
+</script>
 </body>
 </html>
