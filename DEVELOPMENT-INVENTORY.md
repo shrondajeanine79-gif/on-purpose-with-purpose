@@ -4,12 +4,12 @@ _Snapshot generated 2026-11-02 at migration time. See the post-migration update 
 
 ## Post-migration update (2026-11-02)
 
-- Local cleanup commit created on `develop-ai-studio`; nothing was pushed.
+- Local cleanup commit created on `develop-ai-studio`; the commits were pushed to origin on 2026-11-02.
 - `.env` and `.env.txt` were removed from the current index and `.gitignore` now excludes them.
 - `opencode.json.backup` and the unused duplicate `images/SITE.jpg` were removed.
 - The 36 CRLF-only working-tree changes were normalized to LF; no substantive site content changed.
 - Node.js v22.23.4 was installed via nvm; `npm test` passes 164/164.
-- The working tree is clean and the branch is ahead of `origin/develop-ai-studio` by the local cleanup commit(s).
+- The working tree is clean and the branch is up to date with `origin/develop-ai-studio`.
 - The old `.env.txt` values remain in public Git history; the owner reports the credentials were rotated. No history purge was performed.
 
 ## Overview
