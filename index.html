@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself, join the live Mid Week Check-In, and be first to hear about the Permission Slips workshop.">
+<meta name="description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself, and be first to hear about community gatherings and memberships.">
 <meta property="og:title" content="On Purpose With Purpose | Live with intention. Grow with purpose.">
-<meta property="og:image" content="images/share-image.jpg">
+<meta property="og:image" content="https://on-purpose-with-purpose.org/images/og-cover.jpg"><meta property="og:url" content="https://on-purpose-with-purpose.org/"><link rel="canonical" href="https://on-purpose-with-purpose.org/">
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
@@ -14,7 +14,7 @@
 <title>On Purpose With Purpose | Live with intention. Grow with purpose.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--cream:#F5F0E1;--paper:#FBF8EF;--green:#1F3D2B;--moss:#5C7A56;--sage:#DDE5D0;--gold:#E0A526;--plum:#4A2545;--ink:#22291F;--muted:#5E6657;
 --serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
@@ -72,7 +72,7 @@ footer .brand img{width:68px;height:68px}
 .hero .wrap{position:relative;z-index:1;padding-top:80px;padding-bottom:72px}
 .hero .eyebrow{color:#f3dfa0}
 .hero h1{color:#fff;font-size:clamp(2.8rem,7.5vw,6rem);letter-spacing:-.025em;max-width:13ch}
-.hero h1 em{color:var(--gold);font-style:italic}
+.hero h1 em{font-family:'Allura',cursive;color:var(--gold);font-style:normal;font-weight:400;font-size:1.3em;letter-spacing:0}
 .hero p.lead{font-size:1.25rem;margin:22px 0 30px;max-width:56ch;color:#f3f0e6}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
 .hero small{display:block;margin-top:22px;color:#e8e4d4}
@@ -132,15 +132,6 @@ form{display:flex;flex-wrap:wrap;gap:12px;max-width:520px}
 form input{flex:1 1 200px;padding:14px 20px;border-radius:999px;border:2px solid #2a1d00;background:#fff8e6;font:inherit}
 .fine{margin-top:14px;font-size:.92rem;color:#3b2c06}
 
-/* permission */
-.perm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.ticket{background:var(--paper);border:2px dashed var(--plum);border-radius:20px;padding:36px 30px;text-align:center;transform:rotate(-2deg)}
-.ticket small{display:block;font-weight:700;color:var(--plum);font-size:.85rem}
-.ticket h3{font-size:2rem;margin:10px 0}
-.ticket p{margin:0 auto 16px;font-family:var(--serif);font-size:1.25rem;color:var(--green)}
-.ticket em{font-family:var(--serif);color:var(--plum)}
-.perm p{margin:16px 0 26px;color:var(--muted)}
-
 /* host + contact */
 .host{background:var(--paper)}
 .host-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
@@ -176,11 +167,10 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
   .crisis{font-size:.85rem;padding:8px 12px}
   .crisis strong{flex-basis:100%;text-align:center;font-size:1.05rem}
   .crisis a{padding:5px 12px}
-  .jgrid,.hgrid,.perm-grid,.host-grid,.offer-grid{grid-template-columns:1fr;gap:36px}
+  .jgrid,.hgrid,.host-grid,.offer-grid{grid-template-columns:1fr;gap:36px}
   .jgrid,.hgrid{gap:18px}
   .offer .slot{min-height:260px}.offer .txt{padding:48px 24px}
   .gal{grid-template-columns:repeat(2,1fr)}
-  .ticket{transform:none}
   section{padding:64px 0}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
@@ -204,7 +194,7 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
     <button class="menu" id="menu" aria-expanded="false" aria-controls="panel">Menu</button>
   </div>
   <nav class="panel" id="panel" aria-label="Main"><div class="wrap"><ul>
-    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="live.html">Live</a></li><li><a href="permission-slips.html">Permission Slips</a></li><li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
   </ul></div></nav>
 </header>
 
@@ -218,7 +208,7 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
     <p class="lead">Real conversations, emotional growth and healing, with practical tools for stronger boundaries and a deeper sense of purpose. You do not have to have it all figured out to begin.</p>
     <div class="cta-row">
       <a class="btn btn-gold" href="free-guide.html">Get the Free Guide</a>
-      <a class="btn btn-line" style="color:#fff" href="live.html">Watch Mid Week Check-In</a>
+      <a class="btn btn-line" style="color:#fff" href="about.html">Meet Shronda</a>
     </div>
     <small>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</small>
   </div>
@@ -234,14 +224,10 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
 <section style="padding-top:40px" id="experiences">
   <div class="wrap arrows"><button type="button" id="prev" aria-label="Previous">&lsaquo;</button><button type="button" id="next" aria-label="Next">&rsaquo;</button></div>
   <div class="rail" id="rail" tabindex="0" aria-label="Experiences">
-    <article class="xc slot g1"><img src="images/live.jpg" alt="" onerror="this.remove()">
-      <small>Live &bull; Free &bull; Every week</small><h3>Mid Week Check-In</h3>
-      <p>Halfway through the week is when we run low. Join me live for a real conversation, a reset, and a reminder that you are not doing this alone.</p>
-      <a class="more" href="live.html">Learn more</a></article>
-    <article class="xc slot g3"><img src="images/permission.jpg" alt="" onerror="this.remove()">
-      <small>The workshop</small><h3>Permission Slips</h3>
-      <p>You have permission to be you 100%.</p>
-      <a class="more" href="permission-slips.html">Learn More</a></article>
+    <article class="xc slot g3"><img src="images/community.jpg" alt="" onerror="this.remove()">
+      <small>The community</small><h3>Community</h3>
+      <p>You were never meant to heal alone. Gather, grow, and rise together.</p>
+      <a class="more" href="community.html">Learn More</a></article>
     <article class="xc slot g2"><img src="images/guide.jpg" alt="" onerror="this.remove()">
       <small>Free guide</small><h3>8 Ways to Be Good to Yourself</h3>
       <p>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</p>
@@ -258,8 +244,8 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
     </div>
     <div class="jgrid">
       <a class="jt slot g4" href="free-guide.html"><img src="images/peace.jpg" alt="" onerror="this.remove()"><span class="tag">Pause</span><strong>I need peace</strong><span class="body">Rest without justifying it, set the boundary, and let go of the guilt. Begin with the practices that calm your whole system.</span><span class="go">Start with the free guide &rarr;</span></a>
-      <a class="jt slot g1" href="live.html"><img src="images/clarity.jpg" alt="" onerror="this.remove()"><span class="tag">Reset</span><strong>I need clarity</strong><span class="body">Say what is true, notice the pattern, and choose a different response. Bring your questions to the live Mid Week Check-In.</span><span class="go">Join the next live &rarr;</span></a>
-      <a class="jt slot g3" href="permission-slips.html"><img src="images/community.jpg" alt="" onerror="this.remove()"><span class="tag">Rise</span><strong>I need community</strong><span class="body">You were never meant to heal alone. Be first in the circle for Permission Slips and our community gatherings.</span><span class="go">Hold my spot &rarr;</span></a>
+      <a class="jt slot g1" href="contact.html"><img src="images/clarity.jpg" alt="" onerror="this.remove()"><span class="tag">Reset</span><strong>I need clarity</strong><span class="body">Say what is true, notice the pattern, and choose a different response. Bring your questions to a real conversation with Shronda.</span><span class="go">Start the conversation &rarr;</span></a>
+      <a class="jt slot g3" href="community.html"><img src="images/community.jpg" alt="" onerror="this.remove()"><span class="tag">Rise</span><strong>I need community</strong><span class="body">You were never meant to heal alone. Be first in the circle for our community gatherings.</span><span class="go">Hold my spot &rarr;</span></a>
     </div>
   </div>
 </section>
@@ -291,25 +277,13 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
     <div class="txt">
       <p class="eyebrow">Free guide &bull; Instant delivery</p>
       <h2>Be good to yourself, starting today.</h2>
-      <p>Get <strong>8 Ways to Be Good to Yourself</strong> in your inbox, plus first word on Permission Slips workshops and community gatherings.</p>
+      <p>Get <strong>8 Ways to Be Good to Yourself</strong> in your inbox, plus first word on community gatherings and memberships.</p>
       <ul><li>Set boundaries that protect your energy</li><li>Quiet the harsh inner critic</li><li>Rest without guilt or explanation</li><li>Five more, each with a quick &ldquo;try this today&rdquo;</li></ul>
-      <form action="free-guide.html" method="get">
+      <form class="lead-form" action="https://formsubmit.co/ajax/shrondajeanine@on-purpose-with-purpose.org" method="POST" data-thanks-class="btn btn-green">
         <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
         <button class="btn btn-green" type="submit">Send Me the Guide</button>
       </form>
       <p class="fine">No spam, ever. Unsubscribe anytime.</p>
-    </div>
-  </div>
-</section>
-
-<section class="perm" id="permission">
-  <div class="wrap perm-grid">
-    <div class="ticket" aria-hidden="true"><small>Admit one &bull; You</small><h3>Permission Slips</h3><p>You have permission to be you 100%.</p><em>Signed, You</em></div>
-    <div>
-      <p class="eyebrow">The workshop</p>
-      <h2>Stop waiting for someone to hand you permission.</h2>
-      <p>Permission Slips is a healing and growth workshop for anyone who has been waiting to be told it is okay to rest, to say no, to grieve, to begin again, or to simply be themselves.</p>
-      <a class="btn btn-green" href="permission-slips.html">Learn More</a>
     </div>
   </div>
 </section>
@@ -350,7 +324,7 @@ footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-widt
         <p class="tagline">Made with intention. Rooted in growth. Open to becoming.</p>
         <div class="list"><a href="https://facebook.com">Facebook</a><a href="https://youtube.com">YouTube</a><a href="https://instagram.com">Instagram</a><a href="https://tiktok.com">TikTok</a><a href="https://linkedin.com">LinkedIn</a><a href="https://ko-fi.com">Ko-fi</a><a href="https://shrondajeanine79-gif.github.io/link-in-bio/">Link in Bio</a></div>
       </div>
-      <div class="col"><a href="about.html">About</a><a href="live.html">Live</a><a href="permission-slips.html">Permission Slips</a><a href="contact.html">Contact</a></div>
+      <div class="col"><a href="about.html">About</a><a href="live.html">Live</a><a href="contact.html">Contact</a></div>
       <div class="col"><a href="tel:4804423683">480 442 3683</a><a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a><span style="margin-top:10px"><a class="btn btn-gold" style="color:#2a1d00" href="free-guide.html">Get the Free Guide</a></span><span>Or <a href="https://shrondajeanine79-gif.github.io/link-in-bio/">visit our link in bio</a></span></div>
     </div>
     <small class="legal">Educational content is not a substitute for professional help. If you are struggling, please reach out to a licensed professional or someone you trust.<br>&copy; On Purpose With Purpose</small>
@@ -364,5 +338,6 @@ var r=document.getElementById('rail');
 document.getElementById('next').onclick=function(){r.scrollBy({left:420,behavior:'smooth'})};
 document.getElementById('prev').onclick=function(){r.scrollBy({left:-420,behavior:'smooth'})};
 </script>
+<script src="js/site.js"></script>
 </body>
 </html>

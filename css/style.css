@@ -101,16 +101,6 @@ section{padding:84px 0}
 .signup input:focus,.btn:focus-visible,a:focus-visible{outline:3px solid var(--teal-pale);outline-offset:2px}
 .fine{font-size:13.5px;margin-top:16px;color:rgba(245,240,225,.75)!important}
 
-/* Permission Slips */
-.slips .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.slip-card{background:var(--cream-light);border:2px dashed var(--teal-d);border-radius:var(--radius);padding:40px 34px;text-align:center;position:relative;transform:rotate(-1.5deg);box-shadow:0 16px 44px rgba(49,16,66,.12)}
-.slip-card .eyebrow{display:block;margin-bottom:10px}
-.slip-card .big{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,5vw,50px);font-weight:700;color:var(--purple);line-height:1.1}
-.slip-card .tag{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:24px;color:var(--teal-d);margin-top:12px;font-weight:600}
-.slip-card .sig{margin-top:24px;border-top:1px solid var(--line);padding-top:12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--plum-soft)}
-.slips h2{font-size:clamp(30px,4.2vw,42px)}
-@media(max-width:900px){.slips .wrap{grid-template-columns:1fr;gap:40px}.slip-card{transform:none}}
-
 /* About */
 .about{background:var(--cream-light);border-top:1px solid var(--line)}
 .about .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;align-items:center}
@@ -204,7 +194,6 @@ footer .legal{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255
 .script.purple{color:var(--purple)}
 .script.gold-d{color:#b7791f}
 .hero h1 em{font-family:'Allura','Playfair Display',cursive;font-style:normal;font-weight:400;color:var(--gold-l);font-size:1.35em;letter-spacing:0}
-.slip-card .tag{font-family:'Allura','Playfair Display',cursive;font-style:normal;font-weight:400;font-size:42px;line-height:1.1;color:var(--purple)}
 .philosophy h2 span{font-family:'Allura','Playfair Display',cursive;font-weight:400;color:var(--gold-l);font-size:1.3em;letter-spacing:0}
 .eyebrow,.need,.sig,.brand,.pull cite{font-family:'Playfair Display',Georgia,serif}
 .social-icons{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
