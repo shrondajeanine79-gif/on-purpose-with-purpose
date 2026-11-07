@@ -48,6 +48,28 @@ growth brand (community, creative content, digital products, memberships).
   logged until approved; numbered versions with date/changes/author/approval;
   documents as Markdown + PDF; workflow = draft → present → review → revise →
   approval → log → new version. Owner decisions are the source of truth.
+- **Newsletter: Listmonk SET ASIDE (owner directive, Nov 2026)**: do not
+  configure, install, or plan Listmonk hosting unless the owner reopens it.
+  Site email capture continues via FormSubmit; Buttondown stays parked.
+- **Booking calendar (Nov 2026)**: three approved Calendly meeting types —
+  Community Check-In (30 min, any day, never limited to Wednesdays; described
+  as supportive conversations, NEVER therapy/clinical wording), Podcast /
+  Content Guest Interview (60 min), Collaboration & Partnership (60 min).
+  Zoom and Microsoft Teams both offered. Site wiring waits for the owner's
+  Calendly event URLs.
+- **Calendly + PayPal (owner decisions, Nov 7 2026)**: PayPal is connected to
+  Calendly (account 87XYZMGWBF9N6); all payments go directly to the owner's
+  PayPal account. Event types (owner renames, Nov 7 2026): "Let's Talk"
+  (30 min, phone, one-on-one; the free initial conversation — private
+  sessions, groups, workshops are booked from there later), "Purpose &
+  Perspective" (45 min, Google Meet, group; formerly Podcast / Content Guest
+  Interview), "Creative Connection" (60 min, Google Meet, group; formerly
+  Collaboration & Partnership). Purpose & Perspective rename/price decision
+  parked on the comeback list. Current URLs:
+  - Let's Talk: https://calendly.com/shrondajeanine79/30min
+  - Purpose & Perspective: https://calendly.com/shrondajeanine79/podcast-content-guest-interview
+  - Creative Connection: https://calendly.com/shrondajeanine79/collaboration-partnership
+  (URLs kept their original slugs after renaming — verified live Nov 7 2026.)
 - **3-page website (owner-locked, Nov 2026)**: the public site stays no more
   than 3 pages — Home (`index.html`), Community (Circle of Purpose +
   memberships), and Wellness. Shop and Connect are noindex redirect stubs

@@ -9,18 +9,18 @@ the owner's own inventory.
 |---|---|---|
 | GitHub | Stores website + PURPOSE code | In use |
 | GitHub Pages | Hosts the public site | Recorded hosting setup |
-| Calendly | Free 30-minute consultations | Connected to website |
+| Calendly | Free 30-minute consultations | Connected to website; all 3 event URLs wired Nov 7 2026. Events (renamed by owner): Let's Talk (30 min, free), Purpose & Perspective (45 min), Creative Connection (60 min). Buttons: "Let's Talk" + both group calls. |
 | FormSubmit | Delivers contact-form mail | Delivery confirmed; automatic reply unresolved |
 | Outlook | Receives forwarded branded email | In use |
 | Ko-fi | Support, tips, potential sales/memberships | Setup underway; payment connection + URL unverified |
 
 ## DAY 1 — lock and ship what is already built
-- [ ] Owner reviews local preview; approves batch (site rebuild, fonts, gold, Circle of Purpose, tier prices/billing/7-day trial)
-- [ ] Agent: commit + push develop-ai-studio, merge to main (site live update)
+- [ ] Owner reviews local preview; approves batch (site rebuild, fonts, gold, Circle of Purpose, tier prices/billing/7-day trial) — **preview server running now (localhost:8787); Calendly buttons already reviewed & committed**
+- [ ] Agent: commit + push develop-ai-studio, merge to main (site live update) — *commit + push done; merge to main awaiting owner go-ahead*
 - [ ] Agent: verify Pages deployment finished; owner hard-refreshes live site
 - [ ] Owner: FormSubmit — submit any form once and click the activation email (unblocks automatic replies)
 - [ ] Owner: reply to FormSubmit autoresponse question with yes/no (branded thank-you email) → agent applies
-- [ ] Agent: extract PayPal sandbox zip into repo `checkout/` (local-only, not deployed) and run its 11 tests
+- [x] ~~Agent: extract PayPal sandbox zip into repo `checkout/` (local-only, not deployed) and run its 11 tests~~ — SET ASIDE Nov 7 2026 (owner directive); moved to the comeback list
 
 ## DAY 2 — finish payments
 - [ ] Owner: create Stripe account (if not done) and make 6 Payment Links: Rooted $4.99/mo, Rising $9.99/mo, Unshakeable $14.99/mo + annual $59.88/$119.88/$179.88, each with a 7-day free trial
@@ -38,12 +38,22 @@ the owner's own inventory.
 - [ ] Owner: final review of live site; any leftovers go to a new list
 
 ## Waiting on owner (blocked until answered)
-1. Batch approval to commit + publish
+1. Batch approval to commit + publish (preview running; approve to merge → main)
 2. FormSubmit activation click + autoresponse decision
 3. Stripe account + 6 Payment Link URLs
 4. Ko-fi decision + page URL
 5. Social profile URLs
-6. PayPal sandbox storage location answer (repo `checkout/` vs Desktop only)
+6. ~~PayPal sandbox storage location answer~~ — sandbox set aside Nov 7 2026; PayPal is connected directly to Calendly instead (see comeback list)
+7. ~~Calendly event URLs~~ — delivered + wired Nov 7 2026 ✓
+
+## Comeback list (parked Nov 7 2026, owner directive)
+- PayPal sandbox (repo `checkout/`, 11 tests) — revisit only if the owner reopens direct PayPal checkout testing
+- Purpose & Perspective (formerly Podcast / Content Guest Interview): set a price in Calendly — owner decides later; stays $0.00 for now
+
+## Calendly setup steps (owner, Nov 7 2026) — COMPLETE
+1. [x] Free event stays free: Let's Talk (30 min, phone) — the initial conversation; private sessions/groups/workshops get booked from there later
+2. [x] Third event created + renames done: Creative Connection (60 min, Google Meet, group; formerly Collaboration & Partnership); Purpose & Perspective (45 min, Google Meet, group; formerly Podcast / Content Guest Interview)
+3. [x] Three event URLs sent and wired into index.html (committed 7720563)
 
 ## NOT in scope until separately approved (per Rule 1)
 New products, new pages/features, license review of remaining remote images
