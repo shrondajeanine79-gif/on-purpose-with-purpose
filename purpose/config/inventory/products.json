@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "Observed live site on 2026-10-26. No product policy invented.",
+  "note": "All items are unapproved observations. No prices, availability, or launch dates are known. NEEDS OWNER REVIEW.",
+  "products": [
+    {
+      "id": "unshakeable-ebook",
+      "type": "digital-product",
+      "name": "Unshakeable: 30 Days to Reclaim Your Power, Peace & Purpose",
+      "subtitle": "A guided transformational eBook",
+      "status": "in-development",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": "https://on-purpose-with-purpose.org/shop.html",
+      "observedText": "A guided transformational eBook in development. Coming soon",
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "affirmations-reflection",
+      "type": "digital-product",
+      "name": "Affirmations & reflection",
+      "subtitle": "Downloadable affirmation collections, journaling resources, and guided workbooks",
+      "status": "in-development",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": "https://on-purpose-with-purpose.org/shop.html",
+      "observedText": "In development",
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "classes-experiences",
+      "type": "service-offering",
+      "name": "Classes & experiences",
+      "subtitle": "Future learning opportunities, workshops, and community-centered gatherings",
+      "status": "planned",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": "https://on-purpose-with-purpose.org/shop.html",
+      "observedText": "Updates to come",
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW"
+    },
+    {
+      "id": "free-guide",
+      "type": "lead-magnet",
+      "name": "8 Ways to Be Good to Yourself",
+      "subtitle": "Free guide offered on the homepage and free-guide page",
+      "status": "offered-but-unconfigured",
+      "price": 0,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": "https://on-purpose-with-purpose.org/free-guide.html",
+      "observedText": "Form posts to the literal placeholder [MAILERLITE_FORM_URL]",
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Newsletter form action is an unfilled placeholder.",
+        "No guide file or delivery mechanism was found."
+      ]
+    },
+    {
+      "id": "membership",
+      "type": "membership",
+      "name": "Membership",
+      "subtitle": "Not currently offered anywhere on the live site",
+      "status": "not-offered",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": null,
+      "observedText": null,
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Owner must define membership tiers, benefits, and pricing before any planning proceeds."
+      ]
+    },
+    {
+      "id": "subscription",
+      "type": "subscription",
+      "name": "Subscription",
+      "subtitle": "Not currently offered anywhere on the live site",
+      "status": "not-offered",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": null,
+      "observedText": null,
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Owner must define subscription cadence, fulfillment, and pricing."
+      ]
+    },
+    {
+      "id": "services",
+      "type": "service-offering",
+      "name": "Services",
+      "subtitle": "No services or booking flow found on the live site",
+      "status": "not-offered",
+      "price": null,
+      "currency": null,
+      "purchaseUrl": null,
+      "source": null,
+      "observedText": null,
+      "fulfillment": null,
+      "reviewStatus": "NEEDS OWNER REVIEW",
+      "blockers": [
+        "Owner must define which services are offered and whether booking is required."
+      ]
+    }
+  ]
+}

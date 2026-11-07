@@ -57,7 +57,8 @@ p{margin:0 0 1em}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(245,240,225,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background .25s}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
 .brand{font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:.16em;font-size:14.5px;color:var(--purple);text-decoration:none;text-transform:uppercase;line-height:1.25}
-.brand small{display:block;letter-spacing:.22em;font-size:9.5px;color:var(--teal-d);font-family:'Inter',sans-serif;font-weight:600;margin-top:3px}
+.brand-text{display:flex;flex-direction:column;text-align:left}
+.brand small{display:block;letter-spacing:.22em;font-size:9.5px;color:var(--teal-d);font-family:'Inter',sans-serif;font-weight:600;margin-top:2px}
 .nav{display:flex;align-items:center;gap:28px}
 .nav a.link{color:var(--purple);text-decoration:none;font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
 .nav a.link:hover,.nav a.link[aria-current="page"]{border-bottom-color:var(--teal-l)}
@@ -119,8 +120,8 @@ section{padding:96px 0}
 .tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,27,75,0) 35%,rgba(30,27,75,.92) 100%)}
 .tile .cap{position:relative;z-index:2;padding:24px 22px;width:100%}
 .tile small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-pale);font-weight:600;margin-bottom:6px}
-.tile h3{color:#fff;font-size:30px;margin:0 0 8px}
-.tile .arrow{font-weight:700;font-size:14.5px;color:var(--gold-l)}
+.tile h3{font-family:'Allura',cursive;font-weight:400;font-size:clamp(44px,5vw,58px);line-height:1;color:var(--gold-l);margin:0 0 10px}
+.tile .arrow{font-weight:700;font-size:14.5px;color:#fff}
 @media(max-width:1000px){.tiles{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.tiles{grid-template-columns:1fr}.tile{aspect-ratio:4/3}}
 
@@ -233,6 +234,32 @@ footer .tag-line{margin:14px 0 18px;max-width:300px;color:var(--cream)}
 .social-icons{display:flex;flex-wrap:wrap;gap:10px}
 .social-icons a{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:1.5px solid rgba(153,246,228,.5);color:var(--teal-pale);font-size:17px;transition:transform .15s,background .15s}
 .social-icons a:hover,.social-icons a:focus-visible{background:var(--teal-grad);color:#fff;border-color:transparent;transform:translateY(-3px)}
+
+/* Allura accents: tagline, founder signature, brand line; purple follow icons */
+.intro h2 .script,.tag-line .script,.quote cite .script{color:var(--gold-l)}
+.intro h2 .script{font-size:1.75em}
+.tag-line .script{font-size:1.6em}
+.quote cite .script{font-size:1.9em;letter-spacing:.02em;text-transform:none}
+.brand small .script{font-size:1.9em;letter-spacing:.02em;text-transform:none;color:var(--gold-l)}
+/* Allura accents: tagline, founder signature, brand line; purple follow icons */
+.intro h2 .script,.tag-line .script,.quote cite .script{color:var(--gold-l)}
+.intro h2 .script{font-size:1.75em}
+.tag-line .script{font-size:1.6em}
+.quote cite .script{font-size:1.9em;letter-spacing:.02em;text-transform:none}
+.brand-logo{width:64px;height:64px;border-radius:50%;display:inline-block;vertical-align:middle;margin-right:16px;flex-shrink:0;box-shadow:0 0 0 2px var(--gold-l),0 2px 12px rgba(49,16,66,.35)}
+.brand{display:flex;align-items:center;gap:0}
+@media(max-width:760px){.brand-logo{width:44px;height:44px;margin-right:10px}}
+
+/* Shimmering gold sweep on every Allura gold accent */
+@keyframes goldshimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.brand small .script,.intro h2 .script,.tag-line .script,.quote cite .script,.quote blockquote .script,.tile h3,.gold-shimmer{
+  background:linear-gradient(100deg,#e9c46a 25%,#fff6d5 45%,#e9c46a 65%);background-size:200% 100%;
+  -webkit-background-clip:text;background-clip:text;color:#e9c46a;
+  -webkit-text-fill-color:transparent;animation:goldshimmer 5s linear infinite}
+@media(prefers-reduced-motion:reduce){.brand small .script,.intro h2 .script,.tag-line .script,.quote cite .script,.quote blockquote .script,.tile h3,.gold-shimmer{-webkit-text-fill-color:#e9c46a;color:#e9c46a;animation:none;background:none}}
+.gold-shimmer{font-family:'Allura',cursive;font-weight:400;font-size:1.5em;letter-spacing:.02em}
+.follow-grid i{color:#c084fc}
+.social-icons a{border-color:rgba(192,132,252,.55);color:#c084fc}
 .legal{margin-top:50px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);font-size:13px;color:rgba(245,240,225,.78);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.fgrid{grid-template-columns:1fr}}

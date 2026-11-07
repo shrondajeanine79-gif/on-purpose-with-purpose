@@ -1,0 +1,9 @@
+{
+  "request": "Write and publish a promotional newsletter for the new eBook.",
+  "workflow": "newsletter-send",
+  "action": "publish",
+  "scope": "eBook promotion",
+  "audience": "subscribers",
+  "channel": "email",
+  "actor": "owner"
+}

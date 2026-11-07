@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "project": "PURPOSE",
+  "owner": "Shronda",
+  "status": "DRAFT - NOT OWNER APPROVED",
+  "brandKit": {
+    "status": "NOT FOUND",
+    "searched": [
+      "brand",
+      "brand-kit",
+      "logo",
+      "favicon",
+      "style-guide",
+      "voice",
+      "assets"
+    ],
+    "note": "No brand kit, voice guide, logo file, favicon, or standards document was found in the repository or served on the live site. PURPOSE must not invent brand policy."
+  },
+  "policy": "No value in this registry is brand policy until the owner marks it approved. Missing values stay null and are marked NEEDS OWNER REVIEW. PURPOSE must ask the owner instead of inventing a value.",
+  "requiredForContent": [
+    "mission.statement",
+    "positioning.statement",
+    "audience.primary",
+    "voice.tone",
+    "voice.personality",
+    "claims.banned",
+    "disclaimers.required"
+  ],
+  "fields": {
+    "mission.statement": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply the approved mission statement."
+    },
+    "mission.promise": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply the approved brand promise."
+    },
+    "positioning.statement": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved positioning and differentiators."
+    },
+    "audience.primary": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must define the primary audience."
+    },
+    "audience.secondary": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must define any secondary audience."
+    },
+    "audience.exclusions": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must state who the brand does not serve."
+    },
+    "voice.tone": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved tone descriptors."
+    },
+    "voice.personality": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved personality traits."
+    },
+    "voice.weSay": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved phrasing examples."
+    },
+    "voice.weAvoid": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply phrases and styles to avoid."
+    },
+    "readingLevel": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must specify reading level or accessibility guidance."
+    },
+    "claims.approved": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must list claims that may be repeated."
+    },
+    "claims.banned": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must list prohibited claims, including medical, therapeutic, or guaranteed-outcome language."
+    },
+    "disclaimers.required": {
+      "value": "Educational content is not a substitute for professional help.",
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": "Observed in the live site footer on 2026-10-26",
+      "note": "Observed text only. Owner must confirm this is the required disclaimer and whether more are needed."
+    },
+    "cta.primary": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must approve primary calls to action and their URLs."
+    },
+    "content.pillars": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must define approved content pillars."
+    },
+    "content.prohibitedTopics": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must define topics PURPOSE must never author."
+    },
+    "channels.approved": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must approve which channels PURPOSE may prepare content for."
+    },
+    "seo.canonicalHost": {
+      "value": "on-purpose-with-purpose.org",
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": "Observed CNAME and DNS on 2026-10-26",
+      "note": "Observed host only. Owner must approve canonical policy, title patterns, and description patterns."
+    },
+    "seo.titlePattern": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved title templates."
+    },
+    "seo.descriptionPattern": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must supply approved meta description guidance."
+    },
+    "visual.palette": {
+      "value": {
+        "cream": "#F5F0E1",
+        "ivory": "#FFFDF7",
+        "teal": "#0d9488",
+        "tealDark": "#0f766e",
+        "indigo": "#1e1b4b",
+        "purple": "#311042",
+        "gold": "#ca8a04",
+        "line": "#e3dcc7"
+      },
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": "Observed CSS custom properties in live css/style.css on 2026-10-26",
+      "note": "Observed tokens only. Owner must approve the official palette."
+    },
+    "visual.fonts": {
+      "value": [
+        "Allura",
+        "Playfair Display",
+        "Inter"
+      ],
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": "Observed Google Fonts links in live pages on 2026-10-26",
+      "note": "Observed fonts only. Owner must approve typography rules."
+    },
+    "visual.logo": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "No logo file exists at logo.png or images/logo.png. Owner must supply the approved logo."
+    },
+    "visual.favicon": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "favicon.ico and apple-touch-icon.png return 404. Owner must supply approved icon assets."
+    },
+    "visual.imagery": {
+      "value": [
+        "images/shronda.jpg",
+        "images/nappy-field.jpg",
+        "images/nappy-garden.jpg"
+      ],
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": "Observed files served on the live site on 2026-10-26",
+      "note": "Observed assets only. Owner must approve usage rights and imagery rules."
+    },
+    "compliance.reviewRequiredFor": {
+      "value": null,
+      "status": "NEEDS OWNER REVIEW",
+      "approved": false,
+      "source": null,
+      "note": "Owner must state which content types require legal or clinical review."
+    }
+  }
+}

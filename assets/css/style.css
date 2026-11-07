@@ -1295,6 +1295,21 @@ body { background: #f7f4eb; }
 :root { --font-signature:"Allura",cursive; --font-reflection:"Allura",cursive; --font-soft-script:"Allura",cursive; }
 
 /* Approved brand typography: Playfair Display headings, Allura signature accents. */
+.script{font-family:'Allura',cursive;font-weight:400;font-style:normal;letter-spacing:0;line-height:1;font-size:1.35em}
+.script.gold{color:#e9c46a}
+.site-footer .script{font-size:1.7em;color:#e9c46a}
+
+/* Membership tiers */
+.tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:8px}
+.tier{border:1px solid rgba(40,88,75,.14);border-radius:22px;background:#fffdf8;padding:clamp(22px,3vw,32px);box-shadow:0 12px 35px rgba(40,88,75,.06);display:flex;flex-direction:column}
+.tier img{width:100%;max-width:230px;border-radius:16px;margin:0 auto 14px;display:block}
+.tier h3{margin:0;color:#28584b;font-size:1.25rem}
+.tier .tier-tag{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#e9c46a;margin-bottom:10px}
+.tier ul{margin:6px 0 18px;padding-left:20px;color:#3d5548}
+.tier li{margin-bottom:8px;font-size:.95rem}
+.tier .button-primary{margin-top:auto}
+.tier-note{margin-top:26px;font-size:.95rem;color:var(--muted)}
+@media(max-width:880px){.tier-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}}
 :root { --font-heading: "Playfair Display", Georgia, serif; }
 .hero h1, .section-heading h2, .journal-content h2, .purpose-card h3, .brand-name, .inner-hero h1, .page-section h2, .brand-tile h2, .brand-tile h3, .offering-copy h3, .explore-card h3 { font-family: var(--font-heading); }
 
