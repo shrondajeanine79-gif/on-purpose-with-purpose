@@ -20,7 +20,7 @@ the owner's own inventory.
 - [ ] Agent: verify Pages deployment finished; owner hard-refreshes live site
 - [ ] Owner: FormSubmit — submit any form once and click the activation email (unblocks automatic replies)
 - [ ] Owner: reply to FormSubmit autoresponse question with yes/no (branded thank-you email) → agent applies
-- [ ] Agent: extract PayPal sandbox zip into repo `checkout/` (local-only, not deployed) and run its 11 tests
+- [x] ~~Agent: extract PayPal sandbox zip into repo `checkout/` (local-only, not deployed) and run its 11 tests~~ — SET ASIDE Nov 7 2026 (owner directive); moved to the comeback list
 
 ## DAY 2 — finish payments
 - [ ] Owner: create Stripe account (if not done) and make 6 Payment Links: Rooted $4.99/mo, Rising $9.99/mo, Unshakeable $14.99/mo + annual $59.88/$119.88/$179.88, each with a 7-day free trial
@@ -43,7 +43,16 @@ the owner's own inventory.
 3. Stripe account + 6 Payment Link URLs
 4. Ko-fi decision + page URL
 5. Social profile URLs
-6. PayPal sandbox storage location answer (repo `checkout/` vs Desktop only)
+6. ~~PayPal sandbox storage location answer~~ — sandbox set aside Nov 7 2026; PayPal is connected directly to Calendly instead (see comeback list)
+
+## Comeback list (parked Nov 7 2026, owner directive)
+- PayPal sandbox (repo `checkout/`, 11 tests) — revisit only if the owner reopens direct PayPal checkout testing
+- Podcast / Content Guest Interview: rename + set a price in Calendly (owner decides later; stays $0.00 for now)
+
+## Calendly setup steps (owner, Nov 7 2026)
+1. Community Check-In 30: leave price $0.00 — it is always free (the initial conversation; private sessions/groups/workshops get booked from there later)
+2. Create the third event type: Collaboration & Partnership (60 min, Zoom + Microsoft Teams)
+3. Send the agent the three event URLs when ready so the site can be wired
 
 ## NOT in scope until separately approved (per Rule 1)
 New products, new pages/features, license review of remaining remote images

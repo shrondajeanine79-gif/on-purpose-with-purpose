@@ -57,6 +57,14 @@ growth brand (community, creative content, digital products, memberships).
   Content Guest Interview (60 min), Collaboration & Partnership (60 min).
   Zoom and Microsoft Teams both offered. Site wiring waits for the owner's
   Calendly event URLs.
+- **Calendly + PayPal (owner decisions, Nov 7 2026)**: PayPal is connected to
+  Calendly (account 87XYZMGWBF9N6); all payments go directly to the owner's
+  PayPal account. Community Check-In 30 stays FREE always — it is the initial
+  conversation meeting; private sessions, groups, and workshops are booked
+  from there (future offerings, not yet created). Podcast / Content Guest
+  Interview: the name will change and a price will come later — leave it at
+  $0.00 for now. Collaboration & Partnership event type: owner to create it
+  (60 min, Zoom + Teams) in Calendly.
 - **3-page website (owner-locked, Nov 2026)**: the public site stays no more
   than 3 pages — Home (`index.html`), Community (Circle of Purpose +
   memberships), and Wellness. Shop and Connect are noindex redirect stubs
