@@ -1,72 +1,90 @@
 (function(){
-  var b=document.querySelector('.menu-toggle'), n=document.getElementById('nav');
-  if(!b||!n) return;
-  b.addEventListener('click',function(){
-    var open=n.classList.toggle('open');
-    b.setAttribute('aria-expanded',open?'true':'false');
-    b.textContent=open?'Close':'Menu';
-  });
-  n.addEventListener('click',function(e){ if(e.target.tagName==='A'){ n.classList.remove('open'); b.setAttribute('aria-expanded','false'); b.textContent='Menu'; }});
+  var b=document.querySelector('.menu-toggle'), n=document.getElementById('nav'), h=document.querySelector('.site-header');
+  if(b&&n){
+    b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Close':'Menu';});
+    n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';}});
+  }
+  if(h&&h.classList.contains('over')){
+    var f=function(){ if(window.scrollY>90){h.classList.add('stuck');}else{h.classList.remove('stuck');} };
+    window.addEventListener('scroll',f,{passive:true}); f();
+  }
 })();
 
-/* Lead + contact forms: nothing redirects away.
-   - form.lead-form: free-guide + newsletter signups. Sends in the background, then
-     offers the guide PDF download in place. To change newsletter providers later
-     (e.g. Buttondown embedded form), update the forms' data-ajax attribute only.
-   - #contact-form: inline confirmation; on failure a pre-filled email opens so nothing is lost. */
+/* Forms stay on the same page: nothing redirects away.
+   - Free-guide signups (form.lead-form): sent in the background to FormSubmit; the thank-you
+     and the guide download appear right where the form was.
+   - Contact form (#contact-form): sent in the background; a confirmation shows under the button.
+   If sending fails, a pre-filled email to you opens instead so nothing is lost. */
 (function(){
-  var EMAIL='shrondajeanine@on-purpose-with-purpose.org';
-  var PDF='guide/8-Ways-to-Be-Good-to-Yourself.pdf';
-  function ajax(form){
-    return fetch(form.getAttribute('data-ajax'),{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
-      .then(function(r){ if(!r.ok) throw new Error('bad status'); return r.json().catch(function(){ return {}; }); })
-      .then(function(j){ if(j&&(j.success==='false'||j.success===false)) throw new Error('rejected'); });
+  var EMAIL = 'shrondajeanine@on-purpose-with-purpose.org';
+  var PDF = 'guide/8-Ways-to-Be-Good-to-Yourself.pdf';
+
+  function send(form){
+    var url = form.getAttribute('data-ajax');
+    return fetch(url, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+      .then(function(r){ if (!r.ok) { throw new Error('bad status'); } return r.json().catch(function(){ return {}; }); })
+      .then(function(j){ if (j && (j.success === 'false' || j.success === false)) { throw new Error('rejected'); } });
   }
-  function busy(form,on){
-    var btn=form.querySelector('button[type="submit"]'); if(!btn) return;
-    if(on){ btn.dataset.label=btn.textContent; btn.disabled=true; btn.textContent='Sending...'; }
-    else { btn.disabled=false; if(btn.dataset.label) btn.textContent=btn.dataset.label; }
+  function val(form, sel){ var el = form.querySelector(sel); return el ? el.value.trim() : ''; }
+  function busy(form, on){
+    var b = form.querySelector('button[type="submit"]');
+    if (b) { b.disabled = on; if (on) { b.setAttribute('data-label', b.textContent); b.textContent = 'Sending...'; } else if (b.getAttribute('data-label')) { b.textContent = b.getAttribute('data-label'); } }
   }
-  var leads=document.querySelectorAll('form.lead-form');
-  Array.prototype.forEach.call(leads,function(form){
-    form.addEventListener('submit',function(e){
+
+  // ---- Free guide signups ----
+  Array.prototype.forEach.call(document.querySelectorAll('form.lead-form'), function(form){
+    form.addEventListener('submit', function(e){
       e.preventDefault();
-      var nameEl=form.querySelector('[name="name"]'), emailEl=form.querySelector('input[type="email"]');
-      var name=nameEl?nameEl.value.trim():'';
-      var done=function(){
-        var box=document.createElement('div');
-        box.className='lead-thanks'; box.setAttribute('role','status');
-        box.style.cssText='padding:28px;border-radius:16px;background:#eaf2ef;color:#22291f;box-shadow:0 14px 36px rgba(41,43,50,.12)';
-        var h=document.createElement('h3'); h.textContent=name?('Thank you, '+name+'!'):'Thank you!';
-        var p=document.createElement('p'); p.textContent='Your guide is ready, and a copy is headed to your inbox.';
-        var a=document.createElement('a'); a.className=form.dataset.thanksClass||'btn btn-primary';
-        a.href=PDF; a.setAttribute('download','');
-        a.textContent='Download 8 Ways to Be Good to Yourself';
+      var name = val(form, '[name="name"]'), email = val(form, 'input[type="email"]');
+      function done(){
+        var box = document.createElement('div'); box.className = 'thanks';
+        var h = document.createElement('h3'); h.textContent = name ? 'Thank you, ' + name + '!' : 'Thank you!';
+        var p = document.createElement('p'); p.textContent = 'Your guide is ready. We also emailed you a copy of the link.';
+        var a = document.createElement('a'); a.className = 'btn btn-primary'; a.href = PDF; a.setAttribute('download', '');
+        a.textContent = 'Download 8 Ways to Be Good to Yourself';
         box.appendChild(h); box.appendChild(p); box.appendChild(a);
-        form.parentNode.replaceChild(box,form);
-      };
-      busy(form,true);
-      ajax(form).then(done).catch(function(){
-        busy(form,false);
-        var body='Please add me to your list and send the free guide.\n\nName: '+name+'\nEmail: '+(emailEl?emailEl.value.trim():'');
-        window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Free guide request')+'&body='+encodeURIComponent(body);
+        form.parentNode.replaceChild(box, form);
+      }
+      busy(form, true);
+      send(form).then(done).catch(function(){
+        busy(form, false);
+        var body = 'Please add me to your list and send the free guide.\n\nName: ' + name + '\nEmail: ' + email;
+        window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Free guide request') + '&body=' + encodeURIComponent(body);
         done();
       });
     });
   });
-  var cf=document.getElementById('contact-form');
-  if(cf){
-    cf.addEventListener('submit',function(e){
+
+  // ---- Contact form ----
+  var cf = document.getElementById('contact-form');
+  if (cf) {
+    cf.addEventListener('submit', function(e){
       e.preventDefault();
-      var st=document.getElementById('status');
-      busy(cf,true);
-      ajax(cf).then(function(){
-        cf.reset(); busy(cf,false);
-        if(st){ st.className='status-ok'; st.textContent='Thank you. Your message has been sent. Shronda will review it and respond as appropriate.'; }
+      var status = document.getElementById('status');
+      busy(cf, true);
+      send(cf).then(function(){
+        cf.reset(); busy(cf, false);
+        if (status) { status.className = 'status-ok'; status.textContent = 'Thank you. Your message has been sent. Shronda will review it and respond as appropriate.'; }
       }).catch(function(){
-        busy(cf,false);
-        if(st){ st.className='status-err'; st.innerHTML='Sorry, your message did not send. Please email <a href="mailto:'+EMAIL+'">'+EMAIL+'</a> instead.'; }
+        busy(cf, false);
+        if (status) { status.className = 'status-err'; status.innerHTML = 'Sorry, your message did not send. Please email <a href="mailto:' + EMAIL + '">' + EMAIL + '</a> instead.'; }
       });
     });
   }
+})();
+
+/* highlight the menu link for the section you are viewing (stays on the same page) */
+(function(){
+  var links = document.querySelectorAll('.nav a.link[href^="#"]');
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var map = {};
+  Array.prototype.forEach.call(links, function(a){ var id = a.getAttribute('href').slice(1); var el = document.getElementById(id); if (el) map[id] = {a:a, el:el}; });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      Array.prototype.forEach.call(links, function(a){ a.removeAttribute('aria-current'); });
+      var m = map[en.target.id]; if (m) m.a.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  Object.keys(map).forEach(function(id){ io.observe(map[id].el); });
 })();

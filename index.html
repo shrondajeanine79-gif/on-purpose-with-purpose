@@ -1,343 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="p:domain_verify" content="f6b9f538b0f329dde66afb9e7310b94b"/>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself, and be first to hear about community gatherings and memberships.">
-<meta property="og:title" content="On Purpose With Purpose | Live with intention. Grow with purpose.">
-<meta property="og:image" content="https://on-purpose-with-purpose.org/images/og-cover.jpg"><meta property="og:url" content="https://on-purpose-with-purpose.org/"><link rel="canonical" href="https://on-purpose-with-purpose.org/">
-<link rel="icon" href="images/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<meta name="theme-color" content="#1F3D2B">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>On Purpose With Purpose | Live with intention. Grow with purpose.</title>
+<meta name="description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself and be first to hear about community gatherings and memberships.">
+<meta name="theme-color" content="#311042">
+<link rel="canonical" href="https://on-purpose-with-purpose.org/">
+<meta property="og:title" content="On Purpose With Purpose | Live with intention. Grow with purpose.">
+<meta property="og:description" content="Healing, growth and community. Get the free guide 8 Ways to Be Good to Yourself and be first to hear about community gatherings and memberships.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://on-purpose-with-purpose.org/">
+<meta property="og:image" content="images/og-cover.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-:root{--cream:#F5F0E1;--paper:#FBF8EF;--green:#1F3D2B;--moss:#5C7A56;--sage:#DDE5D0;--gold:#E0A526;--plum:#4A2545;--ink:#22291F;--muted:#5E6657;
---serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
-img{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--serif);line-height:1.08;font-weight:600;color:var(--green)}
-h2{font-size:clamp(2rem,4.4vw,3.2rem);letter-spacing:-.01em}
-p{max-width:62ch}
-.eyebrow{font-size:.92rem;font-weight:700;color:var(--moss);margin-bottom:14px}
-.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;cursor:pointer;font:inherit;font-weight:700}
-.btn:hover{transform:translateY(-2px)}
-.btn-gold{background:var(--gold);color:#2a1d00}.btn-gold:hover{background:#f0b63a}
-.btn-green{background:var(--green);color:var(--cream)}
-.btn-line{border-color:currentColor}
-.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 14px;z-index:99}.skip:focus{left:8px}
-.preview{background:#2b2b2b;color:#fff;text-align:center;font-size:.85rem;padding:6px 16px}
-
-/* header */
-header{position:sticky;top:0;z-index:40;background:var(--cream);border-bottom:1px solid rgba(31,61,43,.12)}
-.crisis{background:var(--plum);color:#fff;border-bottom:3px solid var(--gold);padding:9px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center;font-size:.95rem}
-.crisis strong{font-family:var(--serif);font-size:1.15rem}
-.crisis a{background:var(--gold);color:#2a1d00;font-weight:700;text-decoration:none;padding:6px 14px;border-radius:999px;line-height:1.3}
-.crisis a:hover{background:#fff}
-.nav{display:flex;align-items:center;gap:18px;min-height:74px}
-.brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--green);text-decoration:none;line-height:1.15;margin-right:auto}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{width:46px;height:46px;object-fit:contain}
-footer .brand img{width:68px;height:68px}
-.brand small{display:block;font-family:var(--sans);font-weight:500;font-size:.74rem;color:var(--muted)}
-.phone{font-weight:700;text-decoration:none;color:var(--green)}
-.nav .btn{padding:10px 20px;font-size:.93rem}
-.menu{background:none;border:2px solid var(--green);color:var(--green);border-radius:999px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
-.panel{display:none;position:absolute;left:0;right:0;top:100%;background:var(--green);padding:32px 0 40px}
-.panel.open{display:block}
-.panel ul{list-style:none;display:grid;gap:6px}
-.panel a{font-family:var(--serif);font-size:clamp(1.8rem,5vw,2.8rem);color:var(--cream);text-decoration:none}
-.panel a:hover{color:var(--gold)}
-
-/* photo slots */
-.slot{position:relative;overflow:hidden}
-.slot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.g1{background:linear-gradient(150deg,#8fae7e,#2c5239)}
-.g2{background:linear-gradient(150deg,#e9c46a,#9a6a12)}
-.g3{background:linear-gradient(150deg,#8a5a86,#4A2545)}
-.g4{background:linear-gradient(150deg,#5C7A56,#1F3D2B)}
-
-/* hero */
-.hero{min-height:82vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(150deg,#2c5239,#4A2545)}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,30,20,.82),rgba(15,30,20,.15) 65%)}
-.hero .wrap{position:relative;z-index:1;padding-top:80px;padding-bottom:72px}
-.hero .eyebrow{color:#f3dfa0}
-.hero h1{color:#fff;font-size:clamp(2.8rem,7.5vw,6rem);letter-spacing:-.025em;max-width:13ch}
-.hero h1 em{font-family:'Allura',cursive;color:var(--gold);font-style:normal;font-weight:400;font-size:1.3em;letter-spacing:0}
-.hero p.lead{font-size:1.25rem;margin:22px 0 30px;max-width:56ch;color:#f3f0e6}
-.cta-row{display:flex;flex-wrap:wrap;gap:14px}
-.hero small{display:block;margin-top:22px;color:#e8e4d4}
-
-/* statement */
-.statement{padding:96px 0 40px;text-align:center}
-.statement blockquote{font-family:var(--serif);font-size:clamp(1.9rem,4.6vw,3.4rem);line-height:1.15;color:var(--green);max-width:20ch;margin:0 auto}
-.statement cite{display:block;margin-top:20px;font-style:normal;font-weight:700;color:var(--moss)}
-
-/* experience rail */
-section{padding:84px 0}
-.railwrap{position:relative}
-.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 14px;scrollbar-width:thin}
-.xc{flex:0 0 min(400px,82vw);aspect-ratio:3/4;border-radius:26px;scroll-snap-align:start;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;position:relative}
-.xc::after,.jt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,30,20,.85),transparent 62%);z-index:0}
-.xc>*,.jt>*{position:relative;z-index:1}
-.xc small,.jt small{font-weight:700;font-size:.85rem;color:#f3dfa0}
-.xc h3{color:#fff;font-size:2rem;margin:6px 0 10px}
-.xc p{font-size:1rem;color:#f0ede2;margin-bottom:16px}
-.xc a.more{font-weight:700;color:#fff;text-decoration:underline;text-underline-offset:4px}
-.arrows{display:flex;gap:10px;justify-content:flex-end;margin-bottom:14px}
-.arrows button{width:46px;height:46px;border-radius:50%;border:2px solid var(--green);background:none;color:var(--green);font-size:1.3rem;cursor:pointer}
-.arrows button:hover{background:var(--green);color:var(--cream)}
-
-/* journeys */
-.paths{background:var(--sage)}
-.head{margin-bottom:40px}
-.head p{margin-top:12px;color:var(--muted);font-size:1.1rem}
-.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.jt{aspect-ratio:4/5;border-radius:26px;color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;position:relative;transition:transform .2s}
-.jt:hover{transform:translateY(-6px)}
-.jt strong{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1.1;margin:6px 0 10px}
-.jt .tag{align-self:flex-start;background:var(--gold);color:#2a1d00;font-weight:700;font-size:.82rem;padding:3px 12px;border-radius:999px}
-.jt .body{font-size:.98rem;color:#f0ede2}
-.jt .go{margin-top:14px;font-weight:700}
-
-/* testimonial */
-.quote{background:var(--green);text-align:center;padding:96px 0}
-.quote p{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.25;color:var(--cream);margin:0 auto;max-width:28ch}
-.quote cite{display:block;margin-top:22px;font-style:normal;font-weight:700;color:var(--gold)}
-
-/* gallery */
-.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.gal .slot{aspect-ratio:1;border-radius:22px}
-.gal .wide{grid-column:span 2;aspect-ratio:2/1}
-
-/* offer */
-.offer{background:var(--gold);padding:0}
-.offer-grid{display:grid;grid-template-columns:1fr 1fr}
-.offer .slot{min-height:420px}
-.offer .txt{padding:64px 48px}
-.offer h2{color:#2a1d00}
-.offer .eyebrow{color:#5a4207}
-.offer p{margin:14px 0 22px;color:#3b2c06}
-.offer ul{margin:0 0 22px 20px;color:#3b2c06}
-form{display:flex;flex-wrap:wrap;gap:12px;max-width:520px}
-form input{flex:1 1 200px;padding:14px 20px;border-radius:999px;border:2px solid #2a1d00;background:#fff8e6;font:inherit}
-.fine{margin-top:14px;font-size:.92rem;color:#3b2c06}
-
-/* host + contact */
-.host{background:var(--paper)}
-.host-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
-.portrait{aspect-ratio:4/5;border-radius:28px}
-.host p{margin:14px 0}
-.host blockquote{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--green);border-left:6px solid var(--gold);padding-left:20px;margin:20px 0}
-.contact{margin:22px 0 26px;font-size:1.1rem}
-.contact a{font-weight:700;color:var(--green)}
-
-/* help band + footer */
-.helpband{background:var(--plum);color:#fff;padding:64px 0;border-top:6px solid var(--gold)}
-.helpband h2{color:#fff}
-.helpband .sub{margin:10px 0 30px;font-size:1.1rem;color:#f0e2ee}
-.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.hcard{background:var(--cream);color:var(--ink);border-radius:22px;padding:26px}
-.hcard h3{font-size:1.2rem;margin-bottom:10px}
-.hcard .num{display:block;font-family:var(--serif);font-weight:700;font-size:1.9rem;color:var(--plum);text-decoration:none;margin-bottom:8px;line-height:1.1}
-.hcard p{font-size:.98rem}
-.hcard a{color:var(--plum);font-weight:700}
-footer{background:var(--green);color:#cfd9c6;padding:56px 0 36px;font-size:.96rem}
-footer a{color:var(--cream)}
-footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
-footer .brand{color:var(--cream)}
-footer .tagline{margin-top:10px}
-footer .list{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:14px}
-footer .col{display:grid;gap:6px;align-content:start}
-footer .legal{display:block;margin-top:32px;font-size:.9rem;opacity:.85;max-width:70ch}
-
-@media (max-width:860px){
-  .phone{display:none}
-  .brand{font-size:1rem}.brand img{width:38px;height:38px}.brand small{display:none}
-  .nav>.btn{padding:9px 14px;font-size:.85rem}
-  .crisis{font-size:.85rem;padding:8px 12px}
-  .crisis strong{flex-basis:100%;text-align:center;font-size:1.05rem}
-  .crisis a{padding:5px 12px}
-  .jgrid,.hgrid,.host-grid,.offer-grid{grid-template-columns:1fr;gap:36px}
-  .jgrid,.hgrid{gap:18px}
-  .offer .slot{min-height:260px}.offer .txt{padding:48px 24px}
-  .gal{grid-template-columns:repeat(2,1fr)}
-  section{padding:64px 0}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="css/style.css">
+<!-- μ¹⁰ -->
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="preview">Preview only. Draft of the updated homepage. Not live yet.</div>
-
-<header>
-  <div class="crisis" role="region" aria-label="Crisis support">
-    <strong>Need help now?</strong>
-    <a href="tel:988">Suicide &amp; crisis: call or text 988</a>
-    <a href="tel:18007997233">Domestic violence: 1-800-799-7233</a>
-    <a href="tel:18883737888">Human trafficking: 1-888-373-7888</a>
+<body id="top">
+<a href="#main" class="skip">Skip to content</a>
+<header class="site-header over">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="brand-logo" src="images/logo-header-96.png" srcset="images/logo-header-96.png 1x, images/logo-header-192.png 2x" alt="On Purpose With Purpose logo" width="96" height="96" loading="eager"><span class="brand-text">On Purpose With Purpose<small><span class="script">Healing &bull; Growth &bull; Community</span></small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="link" href="#top">Home</a>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="community.html#memberships">Membership</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#free-guide">Get the Free Guide</a>
+    </nav>
   </div>
-  <div class="wrap nav">
-    <a class="brand" href="index.html"><img src="images/logo.png" alt="On Purpose With Purpose emblem" width="46" height="46"><span>On Purpose With Purpose<small>Healing &bull; Growth &bull; Community</small></span></a>
-    <a class="phone" href="tel:4804423683">480 442 3683</a>
-    <a class="btn btn-gold" href="free-guide.html">Get the Free Guide</a>
-    <button class="menu" id="menu" aria-expanded="false" aria-controls="panel">Menu</button>
-  </div>
-  <nav class="panel" id="panel" aria-label="Main"><div class="wrap"><ul>
-    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
-  </ul></div></nav>
 </header>
-
 <main id="main">
-
-<section class="hero slot" style="padding:0">
-  <img src="images/hero.jpg" alt="" onerror="this.remove()">
+<section class="hero dark" style="padding:0">
+  <div class="bg"><div class="ph " role="img" aria-label="A woman in a quiet, sunlit moment of reflection" style="background-image:url('images/hero.jpg?v=2'),linear-gradient(135deg,#1e1b4b,#311042 60%,#0f766e);background-position:center"></div></div>
   <div class="wrap">
-    <p class="eyebrow">A space to pause, grow and become</p>
-    <h1>Live with intention. <em>Grow with purpose.</em></h1>
-    <p class="lead">Real conversations, emotional growth and healing, with practical tools for stronger boundaries and a deeper sense of purpose. You do not have to have it all figured out to begin.</p>
-    <div class="cta-row">
-      <a class="btn btn-gold" href="free-guide.html">Get the Free Guide</a>
-      <a class="btn btn-line" style="color:#fff" href="about.html">Meet Shronda</a>
+    <span class="eyebrow light">A space to pause, grow and become</span>
+    <h1>Live with intention. <span class="script">Grow with purpose.</span></h1>
+    <p class="sub">Real conversations, emotional growth and healing, with practical tools for stronger boundaries and a deeper sense of purpose. You do not have to have it all figured out to begin.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#free-guide">Get the Free Guide</a>
+      <a class="btn btn-ghost" href="#about">Meet Shronda</a>
     </div>
-    <small>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</small>
+    <p class="micro">Free. Instant. From Shronda, author of <em>The Power of Words</em>.</p>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<section class="intro center" style="padding-bottom:70px">
+  <div class="wrap narrow">
+    <span class="eyebrow">Welcome</span>
+    <h2>Made with intention. Rooted in growth. <span class="script">Always evolving.</span></h2>
+    <div class="rule"></div>
+    <p class="lede">On Purpose With Purpose is a community for personal growth, emotional wellness and purposeful living, blending reflection, education, creativity and wellness so you can restore yourself, connect with others and make a positive impact.</p>
   </div>
 </section>
 
-<section class="statement">
+<div class="strip">
+  <div><b>Author</b><span>The Power of Words</span></div>
+  <div><b>Inspirational Speaker</b><span>Healing, growth and purpose</span></div>
+  <div><b>Community Advocate</b><span>Mutual aid and civic action</span></div>
+</div>
+
+<section style="padding-top:60px;padding-bottom:40px">
   <div class="wrap">
-    <blockquote>&ldquo;We don&rsquo;t just exist. We exist on purpose&mdash;with purpose.&rdquo;</blockquote>
-    <cite>Shronda</cite>
+    <div class="feature">
+      <div class="feature-img"><div class="ph " role="img" aria-label="A woman journaling with a warm drink" style="background-image:url('images/guide.jpg?v=2'),linear-gradient(135deg,#311042,#1e1b4b 50%,#0d9488);background-position:center"></div></div>
+      <div>
+        <span class="num">01 &nbsp;/&nbsp; REFLECT</span>
+        <h2 style="margin-top:12px">8 Ways to Be Good to Yourself</h2>
+        <div class="rule"></div>
+        <p>A gentle, free guide to giving yourself the same care you so freely give everyone else. Eight small practices, each with one action you can take today.</p>
+        <p><a class="tlink" href="#free-guide">Get the free guide &rarr;</a></p>
+      </div>
+    </div>
+    <div class="feature flip">
+      <div class="feature-img"><div class="ph " role="img" aria-label="A circle of women sharing and supporting each other" style="background-image:url('images/community.jpg?v=2'),linear-gradient(135deg,#1e1b4b,#0f766e);background-position:center"></div></div>
+      <div>
+        <span class="num">02 &nbsp;/&nbsp; RISE</span>
+        <h2 style="margin-top:12px">Belong to the circle</h2>
+        <div class="rule"></div>
+        <p>Rooted, Rising, and Unshakeable — three ways to belong to On Purpose With Purpose, from letters and journaling guides to deep support.</p>
+        <p><a class="tlink" href="community.html#memberships">See the tiers &rarr;</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section style="padding-top:40px" id="experiences">
-  <div class="wrap arrows"><button type="button" id="prev" aria-label="Previous">&lsaquo;</button><button type="button" id="next" aria-label="Next">&rsaquo;</button></div>
-  <div class="rail" id="rail" tabindex="0" aria-label="Experiences">
-    <article class="xc slot g3"><img src="images/community.jpg" alt="" onerror="this.remove()">
-      <small>The community</small><h3>Community</h3>
-      <p>You were never meant to heal alone. Gather, grow, and rise together.</p>
-      <a class="more" href="community.html">Learn More</a></article>
-    <article class="xc slot g2"><img src="images/guide.jpg" alt="" onerror="this.remove()">
-      <small>Free guide</small><h3>8 Ways to Be Good to Yourself</h3>
-      <p>Free. Instant. Written by Shronda, author of <em>The Power of Words</em>.</p>
-      <a class="more" href="free-guide.html">Send Me the Guide</a></article>
-  </div>
-</section>
-
-<section class="paths" id="paths">
+<section class="alt journeys">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow">Start where you are</p>
-      <h2>What do you need right now?</h2>
-      <p>Pick the one that fits today. Each path starts with a small step you can take in minutes.</p>
+      <div><span class="eyebrow">Start where you are</span><h2>What do you need <span class="script purple">right now?</span></h2></div>
+      <a class="tlink" href="#free-guide">Begin with the free guide &rarr;</a>
     </div>
-    <div class="jgrid">
-      <a class="jt slot g4" href="free-guide.html"><img src="images/peace.jpg" alt="" onerror="this.remove()"><span class="tag">Pause</span><strong>I need peace</strong><span class="body">Rest without justifying it, set the boundary, and let go of the guilt. Begin with the practices that calm your whole system.</span><span class="go">Start with the free guide &rarr;</span></a>
-      <a class="jt slot g1" href="contact.html"><img src="images/clarity.jpg" alt="" onerror="this.remove()"><span class="tag">Reset</span><strong>I need clarity</strong><span class="body">Say what is true, notice the pattern, and choose a different response. Bring your questions to a real conversation with Shronda.</span><span class="go">Start the conversation &rarr;</span></a>
-      <a class="jt slot g3" href="community.html"><img src="images/community.jpg" alt="" onerror="this.remove()"><span class="tag">Rise</span><strong>I need community</strong><span class="body">You were never meant to heal alone. Be first in the circle for our community gatherings.</span><span class="go">Hold my spot &rarr;</span></a>
+    <div class="tiles">
+      <a class="tile" href="#free-guide"><div class="ph " role="img" aria-label="A person meditating in a quiet moment" style="background-image:url('images/pause.jpg'),url('https://images.nappy.co/photo/t-oAR-__XVnON9pDAgVd4.jpg?width=1260'),linear-gradient(135deg,#1e1b4b,#311042 60%,#0f766e);background-position:center"></div><div class="cap"><small>I need peace</small><h3>Pause</h3><span class="arrow">Explore &rarr;</span></div></a>
+      <a class="tile" href="#about"><div class="ph " role="img" aria-label="A man playing basketball outdoors" style="background-image:url('images/reset.jpg'),url('https://images.nappy.co/photo/nD30rz-Ehag91zNYeTh_G.jpg?width=1260'),linear-gradient(160deg,#0f766e,#311042 70%);background-position:center"></div><div class="cap"><small>I need clarity</small><h3>Reset</h3><span class="arrow">Explore &rarr;</span></div></a>
+      <a class="tile" href="community.html#memberships"><div class="ph " role="img" aria-label="A woman standing confident with open arms" style="background-image:url('images/rise.jpg?v=2'),linear-gradient(135deg,#311042,#1e1b4b 50%,#0d9488);background-position:center"></div><div class="cap"><small>I need community</small><h3>Rise</h3><span class="arrow">Explore &rarr;</span></div></a>
+      <a class="tile" href="#values"><div class="ph " role="img" aria-label="A busy street food scene in Nigeria" style="background-image:url('images/advocate.jpg'),url('https://images.nappy.co/photo/aZJjedHqvAUUlPrTi3Ovi.jpg?width=1260'),linear-gradient(135deg,#1e1b4b,#0f766e);background-position:center"></div><div class="cap"><small>I want to act</small><h3>Advocate</h3><span class="arrow">Explore &rarr;</span></div></a>
     </div>
   </div>
 </section>
 
 <section class="quote">
   <div class="wrap">
-    <p>[A viewer comment goes here]</p>
-    <cite>[Name]</cite>
+    <blockquote>&ldquo;We don&rsquo;t just exist. We exist <span class="script">on purpose</span>&mdash;with purpose.&rdquo;</blockquote>
+    <cite><span class="script">Shronda &nbsp;&bull;&nbsp; Founder, On Purpose With Purpose</span></cite>
   </div>
 </section>
 
-<section id="gallery">
+<section id="about" class="page-hero about-hero dark" style="padding:110px 0 90px">
+  <div class="bg" style="background:var(--purple-grad)"></div>
   <div class="wrap">
-    <div class="head"><h2>Gallery</h2></div>
-    <div class="gal">
-      <div class="slot g1 wide"><img src="images/gallery1.jpg" alt="" onerror="this.remove()"></div>
-      <div class="slot g2"><img src="images/gallery2.jpg" alt="" onerror="this.remove()"></div>
-      <div class="slot g3"><img src="images/gallery3.jpg" alt="" onerror="this.remove()"></div>
-      <div class="slot g4"><img src="images/gallery4.jpg" alt="" onerror="this.remove()"></div>
-      <div class="slot g2"><img src="images/gallery5.jpg" alt="" onerror="this.remove()"></div>
-      <div class="slot g3 wide"><img src="images/gallery6.jpg" alt="" onerror="this.remove()"></div>
+    <div class="photo-frame"><img src="images/shronda.jpg" alt="Portrait of Shronda, founder of On Purpose With Purpose" width="900" height="1200"></div>
+    <div>
+      <span class="eyebrow light">Meet</span>
+      <h1><span class="script">Shronda</span></h1>
+      <p style="font-family:'Playfair Display',serif;letter-spacing:.16em;text-transform:uppercase;font-size:15px;color:var(--teal-pale);margin:6px 0 22px">Founder of On Purpose With Purpose</p>
+      <p>Shronda is an author, inspirational speaker, community advocate, and the visionary behind On Purpose With Purpose&mdash;a community dedicated to personal growth, emotional wellness, and purposeful living.</p>
+      <div class="btn-row" style="margin-top:26px"><a class="btn btn-primary" href="#free-guide">Get the Free Guide</a><a class="btn btn-ghost" href="#contact">Get in Touch</a></div>
     </div>
   </div>
 </section>
-
-<section class="offer" id="join">
-  <div class="offer-grid">
-    <div class="slot g2"><img src="images/offer.jpg" alt="" onerror="this.remove()"></div>
-    <div class="txt">
-      <p class="eyebrow">Free guide &bull; Instant delivery</p>
-      <h2>Be good to yourself, starting today.</h2>
-      <p>Get <strong>8 Ways to Be Good to Yourself</strong> in your inbox, plus first word on community gatherings and memberships.</p>
-      <ul><li>Set boundaries that protect your energy</li><li>Quiet the harsh inner critic</li><li>Rest without guilt or explanation</li><li>Five more, each with a quick &ldquo;try this today&rdquo;</li></ul>
-      <form class="lead-form" action="https://formsubmit.co/ajax/shrondajeanine@on-purpose-with-purpose.org" method="POST" data-thanks-class="btn btn-green">
-        <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
-        <button class="btn btn-green" type="submit">Send Me the Guide</button>
+<section>
+  <div class="wrap prose">
+    <p>Grounded in lived experience, Shronda understands that healing isn&rsquo;t linear. Her own journey shaped her commitment to emotional awareness and intentional living, fueling her passion to help others reclaim their voices and unlock their potential.</p>
+    <p>Through On Purpose With Purpose, she blends reflection, education, creativity, and wellness. Her ultimate vision is to create a welcoming sanctuary where people&mdash;particularly Black women whose experiences deserve to be seen and heard&mdash;can find encouragement, meaningful resources, and genuine connection.</p>
+    <p>For Shronda, purpose is about what we restore within ourselves, what we build together, and the positive impact we leave behind.</p>
+  </div>
+</section>
+<section id="foundation">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:46px"><span class="eyebrow">Our foundation</span><h2 class="big">What we stand on</h2><div class="rule"></div></div>
+    <div class="cards3">
+      <div class="cardx"><h3>Our Mission</h3><p>To empower individuals through emotional wellness, self-discovery, and authentic connection while encouraging intentional growth and meaningful collective action.</p></div>
+      <div class="cardx"><h3>Our Vision</h3><p>A world where people recognize their inherent worth, embrace their authentic identities, and contribute to stronger, more compassionate communities.</p></div>
+      <div class="cardx"><h3>Our Purpose</h3><p>To create a restorative space where reflection leads to growth, growth strengthens connection, and connection inspires positive change.</p></div>
+    </div>
+  </div>
+</section>
+<section class="alt" id="values">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:46px"><span class="eyebrow" style="font-size:16px;letter-spacing:.2em">What guides us</span><h2 class="big">Our <span class="script gold-shimmer">Core Values</span></h2><div class="rule"></div></div>
+    <div class="values">
+      <div class="value"><div class="n">1</div><div><h3>Authenticity</h3><p>Honoring who we are without the pressure to perform or pretend.</p></div></div>
+      <div class="value"><div class="n">2</div><div><h3>Self-Worth &amp; Empowerment</h3><p>Reclaiming our voices, recognizing our value, and making intentional choices.</p></div></div>
+      <div class="value"><div class="n">3</div><div><h3>Restoration &amp; Wellness</h3><p>Prioritizing emotional well-being, mindfulness, rest, and healing.</p></div></div>
+      <div class="value"><div class="n">4</div><div><h3>Connection &amp; Belonging</h3><p>Building relationships rooted in respect, compassion, and shared humanity.</p></div></div>
+      <div class="value"><div class="n">5</div><div><h3>Education &amp; Awareness</h3><p>Fostering critical thinking, emotional intelligence, and informed decisions.</p></div></div>
+      <div class="value"><div class="n">6</div><div><h3>Advocacy &amp; Community Action</h3><p>Supporting civic engagement, mutual aid, and collective responsibility.</p></div></div>
+      <div class="value"><div class="n">7</div><div><h3>Purposeful Growth</h3><p>Turning internal reflection into outward action and lasting impact.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="philosophy dark">
+  <div class="wrap">
+    <span class="eyebrow light">Our guiding philosophy</span>
+    <h2>Restore. <span class="script">Grow.</span> Rise.</h2>
+    <div class="rule"></div>
+    <p>We believe that when individuals have the space to restore themselves, they are empowered to grow, connect, advocate, and help their communities rise.</p>
+    <div class="btn-row" style="justify-content:center;margin-top:28px"><a class="btn btn-primary" href="#free-guide">Start with the Free Guide</a><a class="btn btn-ghost" href="community.html#memberships">Membership</a></div>
+  </div>
+</section>
+<section class="offer dark" id="free-guide">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow light">Free guide &bull; Instant delivery</span>
+      <h2>Be good to yourself, <span class="script gold">starting today.</span></h2>
+      <p style="font-size:18px">Get <strong>8 Ways to Be Good to Yourself</strong> in your inbox, plus first word on community gatherings and memberships.</p>
+      <ul class="checks" style="color:var(--cream)">
+        <li>Set boundaries that protect your energy</li><li>Quiet the harsh inner critic</li><li>Rest without guilt or explanation</li><li>Five more, each with a quick &ldquo;try this today&rdquo;</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Send it to me</h3>
+      <p style="color:var(--soft);font-size:15.5px">Free, instant, in your inbox.</p>
+      <!-- Signup goes to FormSubmit in the background and stays on this page -->
+      <form class="lead-form" action="https://formsubmit.co/shrondajeanine@on-purpose-with-purpose.org" data-ajax="https://formsubmit.co/ajax/shrondajeanine@on-purpose-with-purpose.org" method="POST"><input type="hidden" name="_subject" value="New free guide signup - On Purpose With Purpose"><input type="hidden" name="_template" value="table"><input type="hidden" name="_autoresponse" value="Thank you for joining On Purpose With Purpose! Here is your free guide, 8 Ways to Be Good to Yourself: https://on-purpose-with-purpose.org/guide/8-Ways-to-Be-Good-to-Yourself.pdf  With purpose, Shronda"><input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+        <input class="field" type="text" name="name" placeholder="First name" aria-label="First name">
+        <input class="field" type="email" name="fields[email]" placeholder="Your best email" aria-label="Email address" required>
+        <button class="btn btn-primary" type="submit" style="width:100%">Send Me the Guide</button>
       </form>
       <p class="fine">No spam, ever. Unsubscribe anytime.</p>
     </div>
   </div>
 </section>
 
-<section class="host" id="host">
-  <div class="wrap host-grid">
-    <div class="portrait slot g3"><img src="images/shronda.jpg" alt="Portrait of Shronda, founder of On Purpose With Purpose" onerror="this.remove()"></div>
-    <div>
-      <p class="eyebrow">Meet your host</p>
-      <h2>Shronda</h2>
-      <p>Author, inspirational speaker, community advocate, and the visionary behind On Purpose With Purpose, a community dedicated to personal growth, emotional wellness, and purposeful living.</p>
-      <blockquote>&ldquo;We don&rsquo;t just exist. We exist on purpose&mdash;with purpose.&rdquo;</blockquote>
-      <p class="contact">Tel: <a href="tel:4804423683">480 442 3683</a><br>Email: <a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a></p>
-      <div class="cta-row"><a class="btn btn-green" href="about.html">Read Her Story</a><a class="btn btn-line" style="color:var(--green)" href="contact.html">Contact</a></div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<section class="helpband" id="help" aria-labelledby="helph">
+<section id="contact" class="page-hero dark">
+  <div class="bg"><div class="ph " role="img" aria-label="A group of women laughing together" style="background-image:url('images/community.jpg?v=2'),linear-gradient(135deg,#1e1b4b,#311042 60%,#0f766e);background-position:center"></div></div>
   <div class="wrap">
-    <h2 id="helph">Need help now?</h2>
-    <p class="sub">Free and open 24/7. If you are in immediate danger, call 911.</p>
-    <div class="hgrid">
-      <div class="hcard"><h3>Suicide &amp; Crisis Lifeline</h3><a class="num" href="tel:988">Call or text 988</a><p>Chat: <a href="https://988lifeline.org/chat/">988lifeline.org/chat</a></p></div>
-      <div class="hcard"><h3>National Domestic Violence Hotline</h3><a class="num" href="tel:18007997233">1-800-799-7233</a><p>Text START to <a href="sms:88788?&amp;body=START">88788</a><br>TTY 1-800-787-3224<br>Chat: <a href="https://www.thehotline.org">thehotline.org</a></p></div>
-      <div class="hcard"><h3>National Human Trafficking Hotline</h3><a class="num" href="tel:18883737888">1-888-373-7888</a><p>Text HELP or INFO to <a href="sms:233733?&amp;body=HELP">233733</a><br>TTY 711<br>Chat: <a href="https://humantraffickinghotline.org/chat">humantraffickinghotline.org</a></p></div>
+    <span class="eyebrow light">Get in touch</span>
+    <h1>Let&rsquo;s <span class="script gold" style="font-size:1.3em">connect.</span></h1>
+    <p>Questions, collaborations, speaking or community projects? I read every message.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="ccards">
+      <div class="cardx"><h3>Email</h3><p><a href="mailto:shrondajeanine@on-purpose-with-purpose.org?subject=On%20Purpose%20With%20Purpose">shrondajeanine@on-purpose-with-purpose.org</a></p></div>
+      <div class="cardx"><h3>Phone</h3><p><a href="tel:+14804423683">(480) 442-3683</a></p></div>
+      <div class="cardx"><h3>Follow</h3><div style="margin-top:14px"><div class="social-icons"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi" title="Ko-fi"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a></div></div></div>
+    </div>
+    <div class="btn-row" style="justify-content:center;margin-top:46px"><a class="btn btn-primary" href="#contact-form">Send a Message</a><a class="btn btn-outline" href="https://calendly.com/shrondajeanine79/30min">Book a Free Introductory Consultation</a></div>
+    <p style="text-align:center;margin-top:20px">One free 30-minute introductory consultation per person. Any later paid appointments are arranged personally with Shronda.</p>
+    <div style="margin-top:32px"><form action="https://formsubmit.co/shrondajeanine@on-purpose-with-purpose.org" method="POST" data-ajax="https://formsubmit.co/ajax/shrondajeanine@on-purpose-with-purpose.org" id="contact-form">
+<input type="hidden" name="_subject" value="New website contact — On Purpose With Purpose"><input type="hidden" name="_template" value="table"><input type="hidden" name="_autoresponse" value="Thank you for contacting On Purpose With Purpose. Your message has been received. Shronda will review your message and respond as appropriate. Healing • Inspiration • Growth • Connection"><input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+<div class="form-row"><div class="field"><label for="name">Full name *</label><input id="name" type="text" name="name" autocomplete="name" required></div><div class="field"><label for="email">Email address *</label><input id="email" type="email" name="email" autocomplete="email" required></div></div>
+<div class="field"><label for="reason">Reason for contacting</label><select id="reason" name="reason"><option value="">Choose an option (optional)</option><option>General Inquiry</option><option>Partnership Opportunity</option><option>Speaking Engagement</option><option>Support Request</option></select></div>
+<div class="field"><label for="subject">Subject</label><input id="subject" type="text" name="subject"></div><div class="field"><label for="message">How can we help you? *</label><textarea id="message" name="message" required></textarea></div><button type="submit">Send Message →</button><p class="note">* Required fields. Please avoid including sensitive personal information.</p><div id="status" role="status" aria-live="polite"></div></form></div>
+  </div>
+</section>
+<section class="follow alt tight">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Follow along</span><h2 style="margin:0">Find us <span class="script purple" style="font-size:1.4em">everywhere</span></h2></div>
+    <div class="follow-grid">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+      <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
     </div>
   </div>
 </section>
-
+</main>
 <footer>
   <div class="wrap">
-    <div class="row">
+    <div class="fgrid">
       <div>
-        <a class="brand" href="index.html"><img src="images/logo.png" alt="On Purpose With Purpose emblem" width="68" height="68"><span>On Purpose With Purpose</span></a>
-        <p class="tagline">Made with intention. Rooted in growth. Open to becoming.</p>
-        <div class="list"><a href="https://facebook.com">Facebook</a><a href="https://youtube.com">YouTube</a><a href="https://instagram.com">Instagram</a><a href="https://tiktok.com">TikTok</a><a href="https://linkedin.com">LinkedIn</a><a href="https://ko-fi.com">Ko-fi</a><a href="https://shrondajeanine79-gif.github.io/link-in-bio/">Link in Bio</a></div>
+        <a class="brand" href="#top">On Purpose With Purpose</a>
+        <p class="tag-line">Made with intention. Rooted in growth. <span class="script">Always evolving</span></p>
+        <div class="social-icons"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi" title="Ko-fi"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></a></div>
       </div>
-      <div class="col"><a href="about.html">About</a><a href="live.html">Live</a><a href="contact.html">Contact</a></div>
-      <div class="col"><a href="tel:4804423683">480 442 3683</a><a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a><span style="margin-top:10px"><a class="btn btn-gold" style="color:#2a1d00" href="free-guide.html">Get the Free Guide</a></span><span>Or <a href="https://shrondajeanine79-gif.github.io/link-in-bio/">visit our link in bio</a></span></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#free-guide">Free Guide</a></li></ul></div>
+      <div><h4>Discover</h4><ul>
+        <li><a href="community.html#memberships">Membership</a></li><li><a href="#values">Our Values</a></li><li><a href="#foundation">Mission &amp; Vision</a></li><li><a href="https://shrondajeanine79-gif.github.io/link-in-bio/">Link in Bio</a></li></ul></div>
+      <div><h4>Connect</h4><ul>
+        <li><a href="mailto:on-purpose-with-purpose@outlook.com">on-purpose-with-purpose@outlook.com</a></li><li><a href="tel:+14804423683">(480) 442-3683</a></li><li><a href="#contact">Contact</a></li></ul></div>
     </div>
-    <small class="legal">Educational content is not a substitute for professional help. If you are struggling, please reach out to a licensed professional or someone you trust.<br>&copy; On Purpose With Purpose</small>
+    <div class="legal"><span>If you are struggling, please reach out to a licensed professional or someone you trust.</span><span>&copy; On Purpose With Purpose</span></div>
   </div>
 </footer>
-
-<script>
-var m=document.getElementById('menu'),p=document.getElementById('panel');
-m.addEventListener('click',function(){var o=p.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'Close':'Menu'});
-var r=document.getElementById('rail');
-document.getElementById('next').onclick=function(){r.scrollBy({left:420,behavior:'smooth'})};
-document.getElementById('prev').onclick=function(){r.scrollBy({left:-420,behavior:'smooth'})};
-</script>
+<div class="mobile-bar"><a class="btn btn-primary" href="#free-guide">Get the Free Guide</a></div>
 <script src="js/site.js"></script>
 </body>
 </html>

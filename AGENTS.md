@@ -37,6 +37,15 @@ growth brand (community, creative content, digital products, memberships).
 
 ## Conventions and rules
 
+- **Locked tagline**: "Made with intention. Rooted in growth. Always evolving"
+  (owner-approved, footer of every page). Do not alter it unless the owner
+  explicitly asks.
+- **Permission Slips is fully retired** from the website (workshop feature
+  removed by owner decision). Do not re-add it, its `slips.jpg` asset, or
+  `#permission-slips` links/sections. `live.html` is also retired. The memberships
+  feature (Rooted Rising Unshakeable tiers, `community.html#memberships`, Stripe
+  Payment Link placeholders) replaces it.
+
 - **Secrets**: never add, echo, or commit `.env`, `.env.txt`, or API keys. Env
   files are gitignored (`.env.example` is the tracked template). Hive AI keys are
   server-side only — never place a Hive secret in HTML or client JavaScript.

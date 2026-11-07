@@ -15,5 +15,3 @@ community.jpg  2000 x 1000, landscape. A group of women laughing together.
 Nappy (nappy.co) search ideas: "black woman journaling", "black woman smiling laptop", "black women together",
 "black woman resting", "black woman nature", "black woman joy", "community gathering", "friends laughing".
 Check Nappy's license on their site before publishing. Keep each file under about 400 KB (resize at squoosh.app).
-
-Placed 2026-11-06 with owner-confirmed licenses: peace.jpg (RELAX), clarity.jpg (nature), live.jpg (wellNESS). Getty-comp nomo.jpg excluded.
