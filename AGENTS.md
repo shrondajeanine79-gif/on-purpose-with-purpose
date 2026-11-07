@@ -59,12 +59,17 @@ growth brand (community, creative content, digital products, memberships).
   Calendly event URLs.
 - **Calendly + PayPal (owner decisions, Nov 7 2026)**: PayPal is connected to
   Calendly (account 87XYZMGWBF9N6); all payments go directly to the owner's
-  PayPal account. Community Check-In 30 stays FREE always — it is the initial
-  conversation meeting; private sessions, groups, and workshops are booked
-  from there (future offerings, not yet created). Podcast / Content Guest
-  Interview: the name will change and a price will come later — leave it at
-  $0.00 for now. Collaboration & Partnership event type: owner to create it
-  (60 min, Zoom + Teams) in Calendly.
+  PayPal account. Event types (owner renames, Nov 7 2026): "Let's Talk"
+  (30 min, phone, one-on-one; the free initial conversation — private
+  sessions, groups, workshops are booked from there later), "Purpose &
+  Perspective" (45 min, Google Meet, group; formerly Podcast / Content Guest
+  Interview), "Creative Connection" (60 min, Google Meet, group; formerly
+  Collaboration & Partnership). Purpose & Perspective rename/price decision
+  parked on the comeback list. Current URLs:
+  - Let's Talk: https://calendly.com/shrondajeanine79/30min
+  - Purpose & Perspective: https://calendly.com/shrondajeanine79/podcast-content-guest-interview
+  - Creative Connection: https://calendly.com/shrondajeanine79/collaboration-partnership
+  (URLs kept their original slugs after renaming — verified live Nov 7 2026.)
 - **3-page website (owner-locked, Nov 2026)**: the public site stays no more
   than 3 pages — Home (`index.html`), Community (Circle of Purpose +
   memberships), and Wellness. Shop and Connect are noindex redirect stubs

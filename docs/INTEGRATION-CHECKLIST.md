@@ -9,7 +9,7 @@ the owner's own inventory.
 |---|---|---|
 | GitHub | Stores website + PURPOSE code | In use |
 | GitHub Pages | Hosts the public site | Recorded hosting setup |
-| Calendly | Free 30-minute consultations | Connected to website |
+| Calendly | Free 30-minute consultations | Connected to website; all 3 event URLs wired Nov 7 2026. Events (renamed by owner): Let's Talk (30 min, free), Purpose & Perspective (45 min), Creative Connection (60 min). Buttons: "Let's Talk" + both group calls. |
 | FormSubmit | Delivers contact-form mail | Delivery confirmed; automatic reply unresolved |
 | Outlook | Receives forwarded branded email | In use |
 | Ko-fi | Support, tips, potential sales/memberships | Setup underway; payment connection + URL unverified |
