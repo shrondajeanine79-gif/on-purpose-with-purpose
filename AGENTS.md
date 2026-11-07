@@ -48,6 +48,15 @@ growth brand (community, creative content, digital products, memberships).
   logged until approved; numbered versions with date/changes/author/approval;
   documents as Markdown + PDF; workflow = draft → present → review → revise →
   approval → log → new version. Owner decisions are the source of truth.
+- **Newsletter: Listmonk SET ASIDE (owner directive, Nov 2026)**: do not
+  configure, install, or plan Listmonk hosting unless the owner reopens it.
+  Site email capture continues via FormSubmit; Buttondown stays parked.
+- **Booking calendar (Nov 2026)**: three approved Calendly meeting types —
+  Community Check-In (30 min, any day, never limited to Wednesdays; described
+  as supportive conversations, NEVER therapy/clinical wording), Podcast /
+  Content Guest Interview (60 min), Collaboration & Partnership (60 min).
+  Zoom and Microsoft Teams both offered. Site wiring waits for the owner's
+  Calendly event URLs.
 - **3-page website (owner-locked, Nov 2026)**: the public site stays no more
   than 3 pages — Home (`index.html`), Community (Circle of Purpose +
   memberships), and Wellness. Shop and Connect are noindex redirect stubs
