@@ -103,7 +103,7 @@ approved brand policy. Missing standards are marked `NEEDS OWNER REVIEW`.
    `https://ko-fi.com`). Commit `48e77d2` states these were deliberately restored from the
    submitted site, so they are recorded as-is and marked for owner review, not corrected.
 4. Two different contact emails exist: `on-purpose-with-purpose@outlook.com` on
-   `contact.html`, `shrondajeanine@shrondajeanineco.com` on `connect.html`.
+   `contact.html`, `shrondajeanine@on-purpose-with-purpose.org` on `connect.html`.
 5. `WEBSITE_AUDIT.md` is publicly served at `/WEBSITE_AUDIT.md`.
 6. No `canonical`, `og:url`, Twitter card, `sitemap.xml`, `robots.txt`, or structured data.
    `og:image` is a relative path, which social scrapers cannot resolve.

@@ -37,6 +37,37 @@ growth brand (community, creative content, digital products, memberships).
 
 ## Conventions and rules
 
+- **THE PURPOSE NETWORK Brand Protocol (owner-mandated)**: The owner-supplied
+  "Brand Consistency, Approval, Learning & Change Management Protocol" governs
+  all work: no unapproved changes/renames/additions (present ideas as labeled
+  suggestions, never implement unasked); complete the current request and let
+  the owner review before anything else; every approved decision becomes part
+  of project memory; voice = hope/growth/healing/community-centered
+  (never shame-, guilt-, or fear-based); site/newsletter consistency checks;
+  running change log (Added/Modified/Removed/Pending Approval/Notes) — nothing
+  logged until approved; numbered versions with date/changes/author/approval;
+  documents as Markdown + PDF; workflow = draft → present → review → revise →
+  approval → log → new version. Owner decisions are the source of truth.
+- **3-page website (owner-locked, Nov 2026)**: the public site stays no more
+  than 3 pages — Home (`index.html`), Community (Circle of Purpose +
+  memberships), and Wellness. Shop and Connect are noindex redirect stubs
+  (shop → community memberships; connect → index contact). Every nav location
+  across the three live pages matches; do not add new public pages.
+- **Circle of Purpose (owner-approved, Nov 2026)**: the official membership
+  community of On Purpose With Purpose. Tiers locked: Rooted in Purpose (5
+  benefits), Rising in Purpose (7), Unshakeable Purpose (10) — exact benefit
+  lists live in `docs/circle-of-purpose.md` and must not be invented/renamed.
+  One logo only (the purple-gradient emblem) — membership materials build from
+  it. Tier accents: gold+green (Rooted), gold+teal (Rising), premium gold
+  (Unshakeable). Pricing owner-set (Nov 2026): $4.99 / $9.99 / $14.99 monthly with annual options at 12x pricing and a 7-day free trial on every plan; no Stripe products/subscriptions/links
+  without explicit owner approval — keep the placeholders.
+- **Consultation note (internal only, not on site)**: one free 30-minute
+  introductory consultation per person; later paid appointments are arranged
+  personally with Shronda — never publish that sentence on public pages.
+- **Locked gold (owner, Nov 2026)**: the official gold is the purple-gradient
+  logo's gold (measured ≈ `#E79F0C`, darker stop `#C98206`), used with a
+  shimmering sweep for ALL gold accents site-wide. Do not reintroduce the old
+  bright `#E9C46A` or the kit proposal `#C9A24B`.
 - **Locked tagline**: "Made with intention. Rooted in growth. Always evolving"
   (owner-approved, footer of every page). Do not alter it unless the owner
   explicitly asks.

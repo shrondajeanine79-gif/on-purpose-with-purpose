@@ -40,7 +40,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--cream);
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -127,7 +127,7 @@ img {
   display: flex;
   flex-direction: column;
   color: var(--teal-deep);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.25;
@@ -258,7 +258,7 @@ img {
 .section-heading h2,
 .journal-content h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-weight: 400;
   letter-spacing: -1.5px;
   line-height: 1.13;
@@ -394,7 +394,7 @@ img {
 
 .moon-crescent {
   color: #FFF4C5;
-  font-family: Georgia, serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 200px;
   line-height: 1.1;
   text-shadow: 0 0 45px rgba(255, 244, 197, 0.2);
@@ -516,7 +516,7 @@ img {
 .purpose-card h3 {
   margin: 23px 0 10px;
   color: var(--teal-deep);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 23px;
   font-weight: 400;
 }
@@ -620,7 +620,7 @@ img {
 
 .explore-card h3 {
   margin: 36px 0 9px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 30px;
   font-weight: 400;
 }
@@ -662,7 +662,7 @@ img {
 .journal-content::after {
   position: absolute;
   color: rgba(212, 175, 55, 0.55);
-  font-family: Georgia, serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 75px;
   content: "✧";
 }
@@ -687,7 +687,7 @@ img {
 
 .journal-content .journal-signoff {
   color: var(--teal-deep) !important;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 23px !important;
   font-style: italic;
 }
@@ -712,7 +712,7 @@ img {
 
 .footer-brand {
   color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Playfair Display',Georgia,serif;
   font-size: 21px;
 }
 
@@ -1263,10 +1263,10 @@ body { background: #f7f4eb; }
 /* Seven-page site system */
 .inner-hero { padding: clamp(85px, 11vw, 150px) 6% clamp(65px, 8vw, 105px); background: radial-gradient(ellipse at 88% 16%, rgba(243,199,164,.5),transparent 43%),linear-gradient(135deg,#eaf0e7,#faf6ed 65%,#f2e2d4); }
 .inner-hero-content { max-width: 950px; margin: auto; }
-.inner-hero h1 { max-width: 840px; margin: 12px 0 18px; color: var(--forest); font-family: Georgia,"Times New Roman",serif; font-size: clamp(2.6rem,5vw,4.6rem); line-height: 1.12; }
+.inner-hero h1 { max-width: 840px; margin: 12px 0 18px; color: var(--forest); font-family: 'Playfair Display',Georgia,serif; font-size: clamp(2.6rem,5vw,4.6rem); line-height: 1.12; }
 .inner-hero p:not(.eyebrow) { max-width: 650px; font-size: clamp(1.05rem,2vw,1.25rem); }
 .page-section { max-width: 1180px; margin: 0 auto; padding: clamp(55px,7vw,95px) 5%; }
-.page-section h2 { color: var(--forest); font-family: Georgia,"Times New Roman",serif; line-height:1.2; }
+.page-section h2 { color: var(--forest); font-family: 'Playfair Display',Georgia,serif; line-height:1.2; }
 .page-section p { max-width: 75ch; }
 .founder-layout { display:grid; grid-template-columns: minmax(240px,.75fr) minmax(0,1.3fr); align-items:start; gap:clamp(28px,5vw,75px); }
 .portrait-frame { border-radius: 24px; padding: 12px; background: #fffdf7; box-shadow: var(--shadow); }
@@ -1296,21 +1296,21 @@ body { background: #f7f4eb; }
 
 /* Approved brand typography: Playfair Display headings, Allura signature accents. */
 .script{font-family:'Allura',cursive;font-weight:400;font-style:normal;letter-spacing:0;line-height:1;font-size:1.35em}
-.script.gold{color:#e9c46a}
-.site-footer .script{font-size:1.7em;color:#e9c46a}
+.script.gold{color:#e79f0c}
+.site-footer .script{font-size:1.7em;color:#e79f0c}
 
 /* Membership tiers */
 .tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:8px}
 .tier{border:1px solid rgba(40,88,75,.14);border-radius:22px;background:#fffdf8;padding:clamp(22px,3vw,32px);box-shadow:0 12px 35px rgba(40,88,75,.06);display:flex;flex-direction:column}
 .tier img{width:100%;max-width:230px;border-radius:16px;margin:0 auto 14px;display:block}
 .tier h3{margin:0;color:#28584b;font-size:1.25rem}
-.tier .tier-tag{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#e9c46a;margin-bottom:10px}
+.tier .tier-tag{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#e79f0c;margin-bottom:10px}
 .tier ul{margin:6px 0 18px;padding-left:20px;color:#3d5548}
 .tier li{margin-bottom:8px;font-size:.95rem}
 .tier .button-primary{margin-top:auto}
-.tier-note{margin-top:26px;font-size:.95rem;color:var(--muted)}
+.tier-note{font-family:'Inter',sans-serif;margin-top:26px;font-size:.95rem;color:var(--muted)}
 @media(max-width:880px){.tier-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}}
-:root { --font-heading: "Playfair Display", Georgia, serif; }
+:root { --font-heading: 'Playfair Display',Georgia,serif; }
 .hero h1, .section-heading h2, .journal-content h2, .purpose-card h3, .brand-name, .inner-hero h1, .page-section h2, .brand-tile h2, .brand-tile h3, .offering-copy h3, .explore-card h3 { font-family: var(--font-heading); }
 
 /* Restorative garden visual on Community page */
@@ -1320,3 +1320,8 @@ body { background: #f7f4eb; }
 .community-garden-overlay .eyebrow { color:#e8f0d8; }
 .community-garden-overlay p:last-child { max-width:650px; margin:0; font-family:var(--font-heading); font-size:clamp(1.5rem,3vw,2.5rem); line-height:1.25; }
 @media(max-width:1250px) { .community-garden-visual {margin-left:5%;margin-right:5%;} }
+
+/* Logo gold shimmer sweep for script accents (owner locked Nov 2026) */
+@keyframes goldshimmerA{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.script.gold,.site-footer .script{background:linear-gradient(100deg,#c98206 25%,#ffdf80 45%,#e79f0c 65%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldshimmerA 5s linear infinite}
+@media(prefers-reduced-motion:reduce){.script.gold,.site-footer .script{-webkit-text-fill-color:#e79f0c;background:none;animation:none}}
