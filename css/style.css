@@ -10,7 +10,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--text);font-family:'Inter','Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Playfair Display',Georgia,serif;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:var(--teal-d)}
 h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;color:var(--purple);line-height:1.12;margin:0 0 .5em;font-weight:600}
@@ -20,7 +20,7 @@ p{margin:0 0 1em}
 .center{text-align:center}
 .skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--purple);padding:10px 16px;border-radius:8px;z-index:200;font-weight:600}
 .skip:focus{left:8px}
-.script{font-family:'Allura','Playfair Display',cursive;font-weight:400;font-style:normal;letter-spacing:0;line-height:1;font-size:1.35em}
+.script{font-family:'Allura',cursive;font-weight:400;font-style:normal;letter-spacing:0;line-height:1;font-size:1.35em}
 .gold{color:var(--gold-l)} .gold-d{color:#b7791f} .purple{color:var(--purple)}
 .eyebrow{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--teal-d);display:block;margin-bottom:14px}
 .dark .eyebrow,.eyebrow.light{color:var(--teal-pale)}
@@ -58,7 +58,7 @@ p{margin:0 0 1em}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
 .brand{font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:.16em;font-size:14.5px;color:var(--purple);text-decoration:none;text-transform:uppercase;line-height:1.25}
 .brand-text{display:flex;flex-direction:column;text-align:left}
-.brand small{display:block;letter-spacing:.22em;font-size:9.5px;color:var(--teal-d);font-family:'Inter',sans-serif;font-weight:600;margin-top:2px}
+.brand small{display:block;letter-spacing:.22em;font-size:9.5px;color:var(--teal-d);font-family:'Playfair Display',Georgia,serif;font-weight:600;margin-top:2px}
 .nav{display:flex;align-items:center;gap:28px}
 .nav a.link{color:var(--purple);text-decoration:none;font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
 .nav a.link:hover,.nav a.link[aria-current="page"]{border-bottom-color:var(--teal-l)}
@@ -97,7 +97,7 @@ section{padding:96px 0}
 .strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--cream-light)}
 .strip div{padding:34px 24px;text-align:center;border-right:1px solid var(--line)}
 .strip div:last-child{border-right:0}
-.strip b{display:block;font-family:'Playfair Display',serif;font-size:21px;color:var(--purple);margin-bottom:4px}
+.strip b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:21px;color:var(--purple);margin-bottom:4px}
 .strip span{font-size:14.5px;color:var(--soft)}
 @media(max-width:760px){.strip{grid-template-columns:1fr}.strip div{border-right:0;border-bottom:1px solid var(--line)}}
 
@@ -107,7 +107,7 @@ section{padding:96px 0}
 .feature-img{aspect-ratio:4/5;border-radius:var(--radius);box-shadow:0 22px 56px rgba(49,16,66,.2);position:relative;overflow:hidden}
 .feature h2{font-size:clamp(30px,4vw,46px)}
 .feature p{font-size:18px;color:var(--text)}
-.feature .num{font-family:'Playfair Display',serif;font-size:14px;letter-spacing:.2em;color:var(--teal-d);font-weight:700}
+.feature .num{font-family:'Playfair Display',Georgia,serif;font-size:14px;letter-spacing:.2em;color:var(--teal-d);font-weight:700}
 @media(max-width:900px){.feature{grid-template-columns:1fr;gap:34px;padding:40px 0}.feature.flip .feature-img{order:0}.feature-img{aspect-ratio:4/3}}
 
 /* Journeys tiles */
@@ -131,7 +131,7 @@ section{padding:96px 0}
 .quote .wrap{position:relative}
 .quote blockquote{margin:0 auto;max-width:900px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(28px,4.4vw,48px);line-height:1.25;color:#fff}
 .quote blockquote .script{font-style:normal;color:var(--gold-l)}
-.quote cite{display:block;margin-top:26px;font-style:normal;font-family:'Playfair Display',serif;letter-spacing:.2em;font-size:13px;color:var(--teal-pale);text-transform:uppercase}
+.quote cite{display:block;margin-top:26px;font-style:normal;font-family:'Playfair Display',Georgia,serif;letter-spacing:.2em;font-size:13px;color:var(--teal-pale);text-transform:uppercase}
 
 /* Meet split */
 .meet{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
@@ -164,7 +164,7 @@ section{padding:96px 0}
 .contactblock h2{font-size:clamp(30px,4vw,44px)}
 .cinfo{background:var(--cream-light);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:0 12px 36px rgba(49,16,66,.08)}
 .cinfo p{margin:0 0 18px;font-size:15px;color:var(--soft)}
-.cinfo a.big-link{display:block;font-family:'Playfair Display',serif;font-size:24px;color:var(--purple);text-decoration:none;margin-top:4px;word-break:break-word}
+.cinfo a.big-link{display:block;font-family:'Playfair Display',Georgia,serif;font-size:24px;color:var(--purple);text-decoration:none;margin-top:4px;word-break:break-word}
 .cinfo a.big-link:hover{color:var(--teal-d)}
 @media(max-width:900px){.contactblock{grid-template-columns:1fr;gap:34px}}
 
@@ -200,7 +200,7 @@ section{padding:96px 0}
 @media(max-width:900px){.cards3{grid-template-columns:1fr}}
 .values{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .value{display:grid;grid-template-columns:54px 1fr;gap:18px;background:var(--cream-light);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-.value .n{width:54px;height:54px;border-radius:50%;background:var(--teal-grad);color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+.value .n{width:54px;height:54px;border-radius:50%;background:var(--teal-grad);color:#fff;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
 .value h3{font-size:21px;margin:0 0 4px}.value p{margin:0;font-size:15.5px;color:var(--soft);line-height:1.6}
 @media(max-width:900px){.values{grid-template-columns:1fr}}
 .philosophy{background:var(--purple-grad);text-align:center;border-top:8px solid transparent;border-image:var(--teal-grad) 1}
@@ -210,8 +210,8 @@ section{padding:96px 0}
 
 /* Permission slip card */
 .slip-card{background:var(--cream-light);border:2px dashed var(--teal-d);border-radius:var(--radius);padding:44px 34px;text-align:center;transform:rotate(-1.5deg);box-shadow:0 18px 48px rgba(49,16,66,.14)}
-.slip-card .name{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,52px);font-weight:700;color:var(--purple);line-height:1.1}
-.slip-card .tag{font-family:'Allura','Playfair Display',cursive;font-size:44px;color:var(--purple);line-height:1.1;margin-top:10px}
+.slip-card .name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,5vw,52px);font-weight:700;color:var(--purple);line-height:1.1}
+.slip-card .tag{font-family:'Allura',cursive;font-size:44px;color:var(--purple);line-height:1.1;margin-top:10px}
 .slip-card .sig{margin-top:24px;border-top:1px solid var(--line);padding-top:12px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
 @media(max-width:900px){.slip-card{transform:none}}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -224,7 +224,7 @@ section{padding:96px 0}
 /* Footer */
 footer{background:var(--purple-grad);color:var(--cream);padding:76px 0 36px;border-top:8px solid transparent;border-image:var(--teal-grad) 1}
 .fgrid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:40px}
-footer h4{font-family:'Playfair Display',serif;color:#fff;font-size:15px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 16px}
+footer h4{font-family:'Playfair Display',Georgia,serif;color:#fff;font-size:15px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 16px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin:0 0 9px;font-size:15.5px}
 footer a{color:var(--teal-pale);text-decoration:none}
